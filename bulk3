@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#2D2D2D; --near-black:#1C1C1E; --yellow:#E8C547; --yellow-pale:#FBF5DA;
+    --pink:#E89BB5; --pink-pale:#F9EFF4; --off-white:#FFFDF9; --white:#FFFFFF;
+    --muted:#6B7A68; --light-muted:#9DADA6;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#777;}
+  .slide{width:1080px;height:1440px;font-family:'Lato',sans-serif;position:relative;overflow:hidden;}
+  .safe{position:absolute;top:180px;right:120px;bottom:180px;left:50px;
+    display:flex;flex-direction:column;justify-content:center;}
+  .safe.safe-top{justify-content:flex-start;}
+  .bg-charcoal{background:var(--charcoal);color:var(--white);}
+  .bg-offwhite{background:var(--off-white);color:var(--charcoal);}
+  .bg-yellow{background:var(--yellow);color:var(--charcoal);}
+  .bg-pink{background:var(--pink);color:var(--charcoal);}
+  .headline{font-family:'Playfair Display',serif;font-weight:700;line-height:1.15;}
+  .hook{font-size:78px;line-height:1.12;}
+  .h-slide{font-size:58px;}
+  .body{font-size:36px;line-height:1.4;font-weight:400;margin-top:32px;}
+  .badge{font-family:'Lato';font-weight:700;font-size:150px;line-height:1;}
+  .creds{font-family:'Dancing Script',cursive;font-size:34px;font-weight:600;}
+  .script-word{font-family:'Dancing Script',cursive;font-weight:700;color:var(--pink);}
+  .highlight-yellow{color:var(--yellow);}
+  .swipe-yellow{background:var(--yellow);color:var(--charcoal);padding:4px 18px;border-radius:6px 14px 8px 16px;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+  .swipe-pink{background:var(--pink);color:var(--charcoal);padding:4px 18px;border-radius:6px 14px 8px 16px;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+  .underline-pink{border-bottom:8px solid var(--pink);padding-bottom:2px;}
+  .underline-yellow{border-bottom:8px solid var(--yellow);padding-bottom:2px;}
+  .accent-bar{width:120px;height:10px;background:var(--yellow);margin-bottom:40px;}
+  .accent-bar-pink{width:120px;height:10px;background:var(--pink);margin-bottom:40px;}
+  .eyebrow{font-family:'Lato';font-weight:700;font-size:30px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:28px;}
+  .eyebrow-dark{font-family:'Lato';font-weight:700;font-size:30px;letter-spacing:3px;text-transform:uppercase;color:var(--light-muted);margin-bottom:28px;}
+  .counter{position:absolute;top:80px;left:50px;background:var(--pink);color:var(--charcoal);
+    font-family:'Lato';font-weight:700;font-size:32px;padding:10px 28px;border-radius:40px;z-index:2;}
+  .callout{background:var(--off-white);color:var(--charcoal);border:5px solid var(--pink);
+    border-radius:28px;padding:30px 40px;font-family:'Dancing Script',cursive;font-weight:700;font-size:48px;
+    display:inline-block;margin-top:48px;}
+  .divider-dotted{border:none;border-top:5px dotted var(--pink);margin:40px 0;width:260px;}
+  .divider-page{align-items:center;justify-content:center;text-align:center;}
+  .divider-num{font-family:'Playfair Display',serif;font-weight:700;font-size:240px;color:var(--yellow);line-height:1;}
+  .divider-eyebrow{font-family:'Lato';font-weight:700;font-size:30px;letter-spacing:4px;text-transform:uppercase;color:var(--light-muted);margin-bottom:8px;}
+  .divider-title{font-family:'Playfair Display',serif;font-weight:700;font-size:54px;color:var(--white);margin-top:24px;max-width:780px;padding:0 40px;}
+  .caption-page{background:var(--off-white);color:var(--charcoal);padding:120px 90px;
+    display:flex;flex-direction:column;justify-content:flex-start;}
+  .caption-flag{font-family:'Lato';font-weight:700;font-size:28px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--pink);margin-bottom:40px;}
+  .caption-body{font-family:'Lato';font-weight:400;font-size:36px;line-height:1.5;white-space:pre-wrap;}
+  .caption-tags{font-family:'Lato';font-weight:700;font-size:34px;color:var(--muted);margin-top:40px;}
+  .caption-accounts{font-family:'Lato';font-weight:400;font-size:30px;color:var(--muted);margin-top:28px;}
+</style>
+</head>
+<body>
+<div class="slide bg-charcoal divider-page" data-document-role="page" data-label="Carousel 21">
+  <div class="divider-eyebrow">Research Findings</div>
+  <div class="divider-num">21</div>
+  <div class="divider-title">Predictable goodbyes ease separation stress</div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C21 · Hook" data-speaker-notes="Top-aligned. Add your cutout photo, a doodle arrow, and a sparkle in the open lower area in Canva.">
+  <div class="counter">1/9</div>
+  <div class="safe safe-top">
+    <div class="accent-bar"></div>
+    <h1 class="headline hook">Researchers found a <span class="script-word">predictable goodbye</span> lowers a child's separation stress.</h1>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C21 · Why it matters">
+  <div class="counter">2/9</div>
+  <div class="safe">
+    <div class="eyebrow">Why it matters</div>
+    <h2 class="headline h-slide">The clingy dropoff is not manipulation. It is a brain bracing for the unknown.</h2>
+    <hr class="divider-dotted">
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C21 · Finding 1">
+  <div class="counter">3/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Sneaking out spares the tears now but <span class="swipe-yellow">raises the alert</span> for next time.</h2>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C21 · Finding 2">
+  <div class="counter">4/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">A short, consistent goodbye ritual tells the body that leaving is <span class="underline-pink">safe and predictable</span>.</h2>
+  </div>
+</div>
+
+<div class="slide bg-yellow" data-document-role="page" data-label="C21 · Stat">
+  <div class="counter">5/9</div>
+  <div class="safe">
+    <div class="eyebrow">The takeaway</div>
+    <h2 class="headline h-slide">A trusted goodbye beats a vanished one every time.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C21 · Mechanism">
+  <div class="counter">6/9</div>
+  <div class="safe">
+    <div class="eyebrow-dark">What is happening</div>
+    <h2 class="headline h-slide">Predictability teaches the system that you go and you reliably return.</h2>
+  </div>
+</div>
+
+<div class="slide bg-pink" data-document-role="page" data-label="C21 · Reframe">
+  <div class="counter">7/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">A protested goodbye is attachment working, not a child giving you a hard time.</h2>
+    <div class="callout">same goodbye, every time</div>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C21 · What to do">
+  <div class="counter">8/9</div>
+  <div class="safe">
+    <div class="eyebrow">Try this</div>
+    <h2 class="headline h-slide">Build one tiny goodbye ritual and use it every single time. Same words, same exit.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C21 · CTA">
+  <div class="counter">9/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Save this for the next dropoff.</h2>
+    <p class="body">Follow <span class="highlight-yellow">@as_the_littles_grow</span> for more.</p>
+    <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+  </div>
+</div>
+
+<div class="slide caption-page" data-document-role="page" data-label="C21 · Caption (copy/paste)">
+  <div class="caption-flag">Caption (not for posting)</div>
+  <div class="caption-body">The clingy dropoff is not manipulation, it is a brain bracing for the unknown. A short, predictable goodbye ritual tells the body that leaving is safe and you reliably return. Same words, same exit, every time. Save this for the next dropoff.</div>
+  <div class="caption-tags">#separationanxiety #gentleparenting #toddlermom</div>
+  <div class="caption-accounts">Tag: none needed</div>
+</div>
+
+<div class="slide bg-charcoal divider-page" data-document-role="page" data-label="Carousel 22">
+  <div class="divider-eyebrow">Research Findings</div>
+  <div class="divider-num">22</div>
+  <div class="divider-title">Movement helps the brain regulate</div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C22 · Hook" data-speaker-notes="Top-aligned. Add your cutout photo, a doodle arrow, and a sparkle in the open lower area in Canva.">
+  <div class="counter">1/9</div>
+  <div class="safe safe-top">
+    <div class="accent-bar"></div>
+    <h1 class="headline hook">Researchers found <span class="script-word">movement</span> helps a child's brain return to calm.</h1>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C22 · Why it matters">
+  <div class="counter">2/9</div>
+  <div class="safe">
+    <div class="eyebrow">Why it matters</div>
+    <h2 class="headline h-slide">Sometimes the path to a settled mind runs straight through the body.</h2>
+    <hr class="divider-dotted">
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C22 · Finding 1">
+  <div class="counter">3/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Pushing, pulling, climbing, and carrying give the nervous system <span class="swipe-yellow">organizing input</span>.</h2>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C22 · Finding 2">
+  <div class="counter">4/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">This kind of heavy, whole-body work can <span class="underline-pink">settle a revved-up system</span>.</h2>
+  </div>
+</div>
+
+<div class="slide bg-yellow" data-document-role="page" data-label="C22 · Stat">
+  <div class="counter">5/9</div>
+  <div class="safe">
+    <div class="eyebrow">The takeaway</div>
+    <h2 class="headline h-slide">A body that has moved is a brain more ready to settle.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C22 · Mechanism">
+  <div class="counter">6/9</div>
+  <div class="safe">
+    <div class="eyebrow-dark">What is happening</div>
+    <h2 class="headline h-slide">Big-muscle activity feeds the system the input it craves to find its baseline.</h2>
+  </div>
+</div>
+
+<div class="slide bg-pink" data-document-role="page" data-label="C22 · Reframe">
+  <div class="counter">7/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">A kid who cannot sit still may be seeking the input that helps them focus.</h2>
+    <div class="callout">let them move</div>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C22 · What to do">
+  <div class="counter">8/9</div>
+  <div class="safe">
+    <div class="eyebrow">Try this</div>
+    <h2 class="headline h-slide">Before you ask for calm and stillness, offer movement. The calm comes easier.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C22 · CTA">
+  <div class="counter">9/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Save this for the wired, cannot-settle days.</h2>
+    <p class="body">Follow <span class="highlight-yellow">@as_the_littles_grow</span> for more.</p>
+    <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+  </div>
+</div>
+
+<div class="slide caption-page" data-document-role="page" data-label="C22 · Caption (copy/paste)">
+  <div class="caption-flag">Caption (not for posting)</div>
+  <div class="caption-body">Sometimes the path to a settled mind runs straight through the body. Pushing, climbing, and carrying give the nervous system organizing input that helps it settle. Before you ask for stillness, offer movement. Save this for the wired, cannot-settle days.</div>
+  <div class="caption-tags">#sensoryprocessing #nervoussystem #childdevelopment</div>
+  <div class="caption-accounts">Tag: none needed</div>
+</div>
+
+<div class="slide bg-charcoal divider-page" data-document-role="page" data-label="Carousel 23">
+  <div class="divider-eyebrow">Research Findings</div>
+  <div class="divider-num">23</div>
+  <div class="divider-title">Kids need responsive faces, not just presence</div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C23 · Hook" data-speaker-notes="Top-aligned. Add your cutout photo, a doodle arrow, and a sparkle in the open lower area in Canva.">
+  <div class="counter">1/9</div>
+  <div class="safe safe-top">
+    <div class="accent-bar"></div>
+    <h1 class="headline hook">Researchers found babies need a <span class="script-word">responsive face</span>, not just a present one.</h1>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C23 · Why it matters">
+  <div class="counter">2/9</div>
+  <div class="safe">
+    <div class="eyebrow">Why it matters</div>
+    <h2 class="headline h-slide">Being in the room is not the same as being with them, and their brain knows it.</h2>
+    <hr class="divider-dotted">
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C23 · Finding 1">
+  <div class="counter">3/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">When a caregiver's face goes still and blank, infants <span class="swipe-yellow">quickly become distressed</span>.</h2>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C23 · Finding 2">
+  <div class="counter">4/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">They work hard to <span class="underline-pink">win back the connection</span>, then withdraw if it does not come.</h2>
+  </div>
+</div>
+
+<div class="slide bg-yellow" data-document-role="page" data-label="C23 · Stat">
+  <div class="counter">5/9</div>
+  <div class="safe">
+    <div class="eyebrow">The takeaway</div>
+    <h2 class="headline h-slide">A warm, reactive face is a need, not a nicety.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C23 · Mechanism">
+  <div class="counter">6/9</div>
+  <div class="safe">
+    <div class="eyebrow-dark">What is happening</div>
+    <h2 class="headline h-slide">A child reads engagement in real time. A flat response registers as a loss of connection.</h2>
+  </div>
+</div>
+
+<div class="slide bg-pink" data-document-role="page" data-label="C23 · Reframe">
+  <div class="counter">7/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Looking up to truly respond is not optional sweetness. It is wiring.</h2>
+    <div class="callout">give the full face</div>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C23 · What to do">
+  <div class="counter">8/9</div>
+  <div class="safe">
+    <div class="eyebrow">Try this</div>
+    <h2 class="headline h-slide">In small moments, give the full face. Eyes, warmth, a real reaction to their bid.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C23 · CTA">
+  <div class="counter">9/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Save this for the distracted days.</h2>
+    <p class="body">Follow <span class="highlight-yellow">@as_the_littles_grow</span> for more.</p>
+    <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+  </div>
+</div>
+
+<div class="slide caption-page" data-document-role="page" data-label="C23 · Caption (copy/paste)">
+  <div class="caption-flag">Caption (not for posting)</div>
+  <div class="caption-body">Being in the room is not the same as being with them, and your baby's brain knows the difference. A warm, responsive face is a real need. In the small moments, give the full face, eyes, warmth, a real reaction to their bid. Save this for the distracted days.</div>
+  <div class="caption-tags">#attachmentparenting #childdevelopment #gentleparenting</div>
+  <div class="caption-accounts">Tag: none needed</div>
+</div>
+
+<div class="slide bg-charcoal divider-page" data-document-role="page" data-label="Carousel 24">
+  <div class="divider-eyebrow">Research Findings</div>
+  <div class="divider-num">24</div>
+  <div class="divider-title">A buffering adult turns toxic stress tolerable</div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C24 · Hook" data-speaker-notes="Top-aligned. Add your cutout photo, a doodle arrow, and a sparkle in the open lower area in Canva.">
+  <div class="counter">1/9</div>
+  <div class="safe safe-top">
+    <div class="accent-bar"></div>
+    <h1 class="headline hook">Researchers found <span class="script-word">one steady adult</span> can change how stress shapes a child's brain.</h1>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C24 · Why it matters">
+  <div class="counter">2/9</div>
+  <div class="safe">
+    <div class="eyebrow">Why it matters</div>
+    <h2 class="headline h-slide">Hard things happen. Whether they harm or build depends on who is beside them.</h2>
+    <hr class="divider-dotted">
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C24 · Finding 1">
+  <div class="counter">3/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Stress without support can <span class="swipe-yellow">wear on a developing brain</span> over time.</h2>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C24 · Finding 2">
+  <div class="counter">4/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">The same stress, met by a reliable adult, becomes <span class="underline-pink">tolerable and even strengthening</span>.</h2>
+  </div>
+</div>
+
+<div class="slide bg-yellow" data-document-role="page" data-label="C24 · Stat">
+  <div class="counter">5/9</div>
+  <div class="safe">
+    <div class="eyebrow">The takeaway</div>
+    <h2 class="headline h-slide">The buffer is a person, not the absence of hard things.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C24 · Mechanism">
+  <div class="counter">6/9</div>
+  <div class="safe">
+    <div class="eyebrow-dark">What is happening</div>
+    <h2 class="headline h-slide">A supportive relationship keeps the stress response from running too high, too long.</h2>
+  </div>
+</div>
+
+<div class="slide bg-pink" data-document-role="page" data-label="C24 · Reframe">
+  <div class="counter">7/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">You cannot prevent every hard thing. You can be the buffer that changes it.</h2>
+    <div class="callout">you are the buffer</div>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C24 · What to do">
+  <div class="counter">8/9</div>
+  <div class="safe">
+    <div class="eyebrow">Try this</div>
+    <h2 class="headline h-slide">In a hard season, prioritize being present and steady over solving it all.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C24 · CTA">
+  <div class="counter">9/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Save this for the heavy seasons.</h2>
+    <p class="body">Follow <span class="highlight-yellow">@as_the_littles_grow</span> for more.</p>
+    <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+  </div>
+</div>
+
+<div class="slide caption-page" data-document-role="page" data-label="C24 · Caption (copy/paste)">
+  <div class="caption-flag">Caption (not for posting)</div>
+  <div class="caption-body">Hard things will happen. Whether they wear on your child or build them often comes down to one steady adult nearby. The same stress, met with support, becomes tolerable and even strengthening. In a hard season, prioritize being present. Save this for the heavy seasons.</div>
+  <div class="caption-tags">#nervoussystem #attachmentparenting #consciousparenting</div>
+  <div class="caption-accounts">Tag: none needed</div>
+</div>
+
+<div class="slide bg-charcoal divider-page" data-document-role="page" data-label="Carousel 25">
+  <div class="divider-eyebrow">Research Findings</div>
+  <div class="divider-num">25</div>
+  <div class="divider-title">Self-regulation is built, not born</div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C25 · Hook" data-speaker-notes="Top-aligned. Add your cutout photo, a doodle arrow, and a sparkle in the open lower area in Canva.">
+  <div class="counter">1/9</div>
+  <div class="safe safe-top">
+    <div class="accent-bar"></div>
+    <h1 class="headline hook">Neuroscience shows self-regulation is a skill that is <span class="script-word">built slowly</span>, not a trait kids are born with.</h1>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C25 · Why it matters">
+  <div class="counter">2/9</div>
+  <div class="safe">
+    <div class="eyebrow">Why it matters</div>
+    <h2 class="headline h-slide">A young child coming undone is not failing. They are still under construction.</h2>
+    <hr class="divider-dotted">
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C25 · Finding 1">
+  <div class="counter">3/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">The brain's control center keeps developing <span class="swipe-yellow">into the mid-twenties</span>.</h2>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C25 · Finding 2">
+  <div class="counter">4/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Expecting adult composure from a small child asks for a tool <span class="underline-pink">not yet finished</span>.</h2>
+  </div>
+</div>
+
+<div class="slide bg-yellow" data-document-role="page" data-label="C25 · Stat">
+  <div class="counter">5/9</div>
+  <div class="safe">
+    <div class="eyebrow">The takeaway</div>
+    <h2 class="headline h-slide">The brain's control center is still under construction for years.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C25 · Mechanism">
+  <div class="counter">6/9</div>
+  <div class="safe">
+    <div class="eyebrow-dark">What is happening</div>
+    <h2 class="headline h-slide">Self-control grows through thousands of supported practice rounds, not willpower.</h2>
+  </div>
+</div>
+
+<div class="slide bg-pink" data-document-role="page" data-label="C25 · Reframe">
+  <div class="counter">7/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Cannot calm down yet is a stage, not a character trait.</h2>
+    <div class="callout">still under construction</div>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C25 · What to do">
+  <div class="counter">8/9</div>
+  <div class="safe">
+    <div class="eyebrow">Try this</div>
+    <h2 class="headline h-slide">Coach the skill in calm moments and lend your calm in hot ones. Repeat for years.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C25 · CTA">
+  <div class="counter">9/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Save this when patience runs thin.</h2>
+    <p class="body">Follow <span class="highlight-yellow">@as_the_littles_grow</span> for more.</p>
+    <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+  </div>
+</div>
+
+<div class="slide caption-page" data-document-role="page" data-label="C25 · Caption (copy/paste)">
+  <div class="caption-flag">Caption (not for posting)</div>
+  <div class="caption-body">A young child coming undone is not failing, they are still under construction. The brain's control center keeps developing for years. Coach the skill in calm moments and lend your calm in the hot ones. Repeat for a long time. Save this when patience runs thin.</div>
+  <div class="caption-tags">#childdevelopment #emotionalregulation #gentleparenting</div>
+  <div class="caption-accounts">Tag: none needed</div>
+</div>
+
+<div class="slide bg-charcoal divider-page" data-document-role="page" data-label="Carousel 26">
+  <div class="divider-eyebrow">Research Findings</div>
+  <div class="divider-num">26</div>
+  <div class="divider-title">A child's no is often a system at capacity</div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C26 · Hook" data-speaker-notes="Top-aligned. Add your cutout photo, a doodle arrow, and a sparkle in the open lower area in Canva.">
+  <div class="counter">1/9</div>
+  <div class="safe safe-top">
+    <div class="accent-bar"></div>
+    <h1 class="headline hook">Researchers found a child's hard no is often a nervous system <span class="script-word">at capacity</span>, not defiance.</h1>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C26 · Why it matters">
+  <div class="counter">2/9</div>
+  <div class="safe">
+    <div class="eyebrow">Why it matters</div>
+    <h2 class="headline h-slide">The wall you hit at the end of the day is frequently a full cup, not a power play.</h2>
+    <hr class="divider-dotted">
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C26 · Finding 1">
+  <div class="counter">3/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">When the system is overloaded, flexibility is the <span class="swipe-yellow">first thing to go</span>.</h2>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C26 · Finding 2">
+  <div class="counter">4/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">A flat refusal can be the body <span class="underline-pink">protecting itself</span> from one more demand.</h2>
+  </div>
+</div>
+
+<div class="slide bg-yellow" data-document-role="page" data-label="C26 · Stat">
+  <div class="counter">5/9</div>
+  <div class="safe">
+    <div class="eyebrow">The takeaway</div>
+    <h2 class="headline h-slide">Sometimes no means I have nothing left, not I will not.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C26 · Mechanism">
+  <div class="counter">6/9</div>
+  <div class="safe">
+    <div class="eyebrow-dark">What is happening</div>
+    <h2 class="headline h-slide">A taxed system narrows to protection. Cooperation needs capacity it does not have.</h2>
+  </div>
+</div>
+
+<div class="slide bg-pink" data-document-role="page" data-label="C26 · Reframe">
+  <div class="counter">7/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">The standoff may be a depleted kid, not a stubborn one.</h2>
+    <div class="callout">refill the cup first</div>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C26 · What to do">
+  <div class="counter">8/9</div>
+  <div class="safe">
+    <div class="eyebrow">Try this</div>
+    <h2 class="headline h-slide">When you hit the wall, lower the demand and refill first. Cooperation follows.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C26 · CTA">
+  <div class="counter">9/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Save this for the end-of-day standoffs.</h2>
+    <p class="body">Follow <span class="highlight-yellow">@as_the_littles_grow</span> for more.</p>
+    <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+  </div>
+</div>
+
+<div class="slide caption-page" data-document-role="page" data-label="C26 · Caption (copy/paste)">
+  <div class="caption-flag">Caption (not for posting)</div>
+  <div class="caption-body">That hard no at the end of the day is often a nervous system at capacity, not a power play. When the system is overloaded, flexibility is the first thing to go. Lower the demand and refill first, cooperation follows capacity. Save this for the end-of-day standoffs.</div>
+  <div class="caption-tags">#nervoussystem #gentleparenting #bigfeelings</div>
+  <div class="caption-accounts">Tag: none needed</div>
+</div>
+
+<div class="slide bg-charcoal divider-page" data-document-role="page" data-label="Carousel 27">
+  <div class="divider-eyebrow">Research Findings</div>
+  <div class="divider-num">27</div>
+  <div class="divider-title">Warmth predicts healthier stress patterns years later</div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C27 · Hook" data-speaker-notes="Top-aligned. Add your cutout photo, a doodle arrow, and a sparkle in the open lower area in Canva.">
+  <div class="counter">1/9</div>
+  <div class="safe safe-top">
+    <div class="accent-bar"></div>
+    <h1 class="headline hook">Researchers found warm, responsive parenting predicts healthier stress patterns <span class="script-word">years later</span>.</h1>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C27 · Why it matters">
+  <div class="counter">2/9</div>
+  <div class="safe">
+    <div class="eyebrow">Why it matters</div>
+    <h2 class="headline h-slide">The steadiness you give now is laying tracks for how their body handles stress later.</h2>
+    <hr class="divider-dotted">
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C27 · Finding 1">
+  <div class="counter">3/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Children who received consistent warmth showed <span class="swipe-yellow">more balanced stress chemistry</span> over time.</h2>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C27 · Finding 2">
+  <div class="counter">4/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">The effect <span class="underline-pink">held years later</span>, long after the early moments had passed.</h2>
+  </div>
+</div>
+
+<div class="slide bg-yellow" data-document-role="page" data-label="C27 · Stat">
+  <div class="counter">5/9</div>
+  <div class="safe">
+    <div class="eyebrow">The takeaway</div>
+    <h2 class="headline h-slide">Today's warmth is tomorrow's resilience.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C27 · Mechanism">
+  <div class="counter">6/9</div>
+  <div class="safe">
+    <div class="eyebrow-dark">What is happening</div>
+    <h2 class="headline h-slide">Repeated early co-regulation helps set the body's long-term stress thermostat.</h2>
+  </div>
+</div>
+
+<div class="slide bg-pink" data-document-role="page" data-label="C27 · Reframe">
+  <div class="counter">7/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">The ordinary warmth of right now is quiet, long-term brain work.</h2>
+    <div class="callout">warmth compounds</div>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C27 · What to do">
+  <div class="counter">8/9</div>
+  <div class="safe">
+    <div class="eyebrow">Try this</div>
+    <h2 class="headline h-slide">Keep choosing warmth in the small moments. It compounds more than you can see.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C27 · CTA">
+  <div class="counter">9/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Save this for a long-game reminder.</h2>
+    <p class="body">Follow <span class="highlight-yellow">@as_the_littles_grow</span> for more.</p>
+    <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+  </div>
+</div>
+
+<div class="slide caption-page" data-document-role="page" data-label="C27 · Caption (copy/paste)">
+  <div class="caption-flag">Caption (not for posting)</div>
+  <div class="caption-body">The ordinary warmth you give right now is quiet, long-term brain work. Warm, responsive parenting predicts healthier stress patterns years later. Keep choosing it in the small moments, it compounds in ways you will not see today. Save this for a long-game reminder.</div>
+  <div class="caption-tags">#consciousparenting #nervoussystem #gentleparenting</div>
+  <div class="caption-accounts">Tag: none needed</div>
+</div>
+
+<div class="slide bg-charcoal divider-page" data-document-role="page" data-label="Carousel 28">
+  <div class="divider-eyebrow">Research Findings</div>
+  <div class="divider-num">28</div>
+  <div class="divider-title">Sensitive kids feel others' emotions more</div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C28 · Hook" data-speaker-notes="Top-aligned. Add your cutout photo, a doodle arrow, and a sparkle in the open lower area in Canva.">
+  <div class="counter">1/9</div>
+  <div class="safe safe-top">
+    <div class="accent-bar"></div>
+    <h1 class="headline hook">Researchers found sensitive children pick up on other people's emotions <span class="script-word">more strongly</span>.</h1>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C28 · Why it matters">
+  <div class="counter">2/9</div>
+  <div class="safe">
+    <div class="eyebrow">Why it matters</div>
+    <h2 class="headline h-slide">Your mood walks into the room with you, and your sensitive kid feels it instantly.</h2>
+    <hr class="divider-dotted">
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C28 · Finding 1">
+  <div class="counter">3/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">They read faces, tone, and tension with <span class="swipe-yellow">unusual accuracy</span>.</h2>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C28 · Finding 2">
+  <div class="counter">4/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">This <span class="underline-pink">deep empathy</span> is a gift, and it means they absorb the hard feelings around them too.</h2>
+  </div>
+</div>
+
+<div class="slide bg-yellow" data-document-role="page" data-label="C28 · Stat">
+  <div class="counter">5/9</div>
+  <div class="safe">
+    <div class="eyebrow">The takeaway</div>
+    <h2 class="headline h-slide">They feel the room, not just their own corner of it.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C28 · Mechanism">
+  <div class="counter">6/9</div>
+  <div class="safe">
+    <div class="eyebrow-dark">What is happening</div>
+    <h2 class="headline h-slide">Heightened attunement means others' states land in their bodies, not just their minds.</h2>
+  </div>
+</div>
+
+<div class="slide bg-pink" data-document-role="page" data-label="C28 · Reframe">
+  <div class="counter">7/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">A kid who melts when you are stressed is not adding to it. They are absorbing it.</h2>
+    <div class="callout">they feel your every mood</div>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C28 · What to do">
+  <div class="counter">8/9</div>
+  <div class="safe">
+    <div class="eyebrow">Try this</div>
+    <h2 class="headline h-slide">Name your own state for them. I am frustrated, and it is not about you.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C28 · CTA">
+  <div class="counter">9/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Save this if your kid feels your every mood.</h2>
+    <p class="body">Follow <span class="highlight-yellow">@as_the_littles_grow</span> for more.</p>
+    <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+  </div>
+</div>
+
+<div class="slide caption-page" data-document-role="page" data-label="C28 · Caption (copy/paste)">
+  <div class="caption-flag">Caption (not for posting)</div>
+  <div class="caption-body">Your mood walks into the room with you, and your sensitive kid feels it instantly. They read faces and tension with unusual accuracy, which means they also absorb the hard feelings around them. Name your own state for them. Save this if your kid feels your every mood.</div>
+  <div class="caption-tags">#highlysensitivechild #HSC #consciousparenting</div>
+  <div class="caption-accounts">Tag: none needed</div>
+</div>
+
+<div class="slide bg-charcoal divider-page" data-document-role="page" data-label="Carousel 29">
+  <div class="divider-eyebrow">Research Findings</div>
+  <div class="divider-num">29</div>
+  <div class="divider-title">Recovery time after a meltdown is real</div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C29 · Hook" data-speaker-notes="Top-aligned. Add your cutout photo, a doodle arrow, and a sparkle in the open lower area in Canva.">
+  <div class="counter">1/9</div>
+  <div class="safe safe-top">
+    <div class="accent-bar"></div>
+    <h1 class="headline hook">Researchers found a child's body needs <span class="script-word">real time</span> to reset after a big emotional wave.</h1>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C29 · Why it matters">
+  <div class="counter">2/9</div>
+  <div class="safe">
+    <div class="eyebrow">Why it matters</div>
+    <h2 class="headline h-slide">Snapping straight back to calm right after a meltdown is not how a nervous system works.</h2>
+    <hr class="divider-dotted">
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C29 · Finding 1">
+  <div class="counter">3/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">A surge of stress chemistry takes time to clear, even <span class="swipe-yellow">after the crying stops</span>.</h2>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C29 · Finding 2">
+  <div class="counter">4/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Pushing for a quick recovery often <span class="underline-pink">restarts the wave</span> instead of ending it.</h2>
+  </div>
+</div>
+
+<div class="slide bg-yellow" data-document-role="page" data-label="C29 · Stat">
+  <div class="counter">5/9</div>
+  <div class="safe">
+    <div class="eyebrow">By the numbers</div>
+    <span class="badge">~90 sec</span>
+    <p class="body">is how long a stress-chemical wave needs just to begin to pass.</p>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C29 · Mechanism">
+  <div class="counter">6/9</div>
+  <div class="safe">
+    <div class="eyebrow-dark">What is happening</div>
+    <h2 class="headline h-slide">The body keeps settling for a while after the loud part is over. That lull is the reset.</h2>
+  </div>
+</div>
+
+<div class="slide bg-pink" data-document-role="page" data-label="C29 · Reframe">
+  <div class="counter">7/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">The quiet, clingy phase after a storm is recovery in motion.</h2>
+    <div class="callout">let them reset</div>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C29 · What to do">
+  <div class="counter">8/9</div>
+  <div class="safe">
+    <div class="eyebrow">Try this</div>
+    <h2 class="headline h-slide">After the storm, offer calm and closeness. Protect the reset before any talking.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C29 · CTA">
+  <div class="counter">9/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Save this for the after-the-meltdown moments.</h2>
+    <p class="body">Follow <span class="highlight-yellow">@as_the_littles_grow</span> for more.</p>
+    <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+  </div>
+</div>
+
+<div class="slide caption-page" data-document-role="page" data-label="C29 · Caption (copy/paste)">
+  <div class="caption-flag">Caption (not for posting)</div>
+  <div class="caption-body">Snapping right back after a meltdown is not how a nervous system works. A surge of stress chemistry takes time to clear, even after the crying stops. Offer calm and closeness and protect the reset before any talking. Save this for the after-the-meltdown moments.</div>
+  <div class="caption-tags">#nervoussystem #bigfeelings #gentleparenting</div>
+  <div class="caption-accounts">Tag: none needed</div>
+</div>
+
+<div class="slide bg-charcoal divider-page" data-document-role="page" data-label="Carousel 30">
+  <div class="divider-eyebrow">Research Findings</div>
+  <div class="divider-num">30</div>
+  <div class="divider-title">Being understood wires security</div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C30 · Hook" data-speaker-notes="Top-aligned. Add your cutout photo, a doodle arrow, and a sparkle in the open lower area in Canva.">
+  <div class="counter">1/9</div>
+  <div class="safe safe-top">
+    <div class="accent-bar"></div>
+    <h1 class="headline hook">Researchers found that <span class="script-word">feeling understood</span> is what wires a child for security.</h1>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C30 · Why it matters">
+  <div class="counter">2/9</div>
+  <div class="safe">
+    <div class="eyebrow">Why it matters</div>
+    <h2 class="headline h-slide">It is not getting everything right. It is your child feeling truly understood.</h2>
+    <hr class="divider-dotted">
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C30 · Finding 1">
+  <div class="counter">3/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">When a child's inner experience is seen and reflected back, the brain <span class="swipe-yellow">reads safe</span>.</h2>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C30 · Finding 2">
+  <div class="counter">4/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">This attunement, repeated over time, becomes the felt sense of <span class="underline-pink">secure attachment</span>.</h2>
+  </div>
+</div>
+
+<div class="slide bg-yellow" data-document-role="page" data-label="C30 · Stat">
+  <div class="counter">5/9</div>
+  <div class="safe">
+    <div class="eyebrow">The takeaway</div>
+    <h2 class="headline h-slide">Understood is the foundation security is built on.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C30 · Mechanism">
+  <div class="counter">6/9</div>
+  <div class="safe">
+    <div class="eyebrow-dark">What is happening</div>
+    <h2 class="headline h-slide">Being accurately seen tells the nervous system it is not alone with the big stuff.</h2>
+  </div>
+</div>
+
+<div class="slide bg-pink" data-document-role="page" data-label="C30 · Reframe">
+  <div class="counter">7/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Your child does not need to be changed. They need to be understood.</h2>
+    <div class="callout">they want to be understood</div>
+  </div>
+</div>
+
+<div class="slide bg-offwhite" data-document-role="page" data-label="C30 · What to do">
+  <div class="counter">8/9</div>
+  <div class="safe">
+    <div class="eyebrow">Try this</div>
+    <h2 class="headline h-slide">Before solving, reflect what you see. You really did not want that to end.</h2>
+  </div>
+</div>
+
+<div class="slide bg-charcoal" data-document-role="page" data-label="C30 · CTA">
+  <div class="counter">9/9</div>
+  <div class="safe">
+    <h2 class="headline h-slide">Save this for the moments you want them to feel seen.</h2>
+    <p class="body">Follow <span class="highlight-yellow">@as_the_littles_grow</span> for more.</p>
+    <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+  </div>
+</div>
+
+<div class="slide caption-page" data-document-role="page" data-label="C30 · Caption (copy/paste)">
+  <div class="caption-flag">Caption (not for posting)</div>
+  <div class="caption-body">Your child does not need to be changed. They need to feel understood. When their inner experience is seen and reflected back, the brain reads safe, and that becomes security over time. Before solving, reflect what you see. Save this for the moments you want them to feel seen.</div>
+  <div class="caption-tags">#attachmentparenting #consciousparenting #gentleparenting</div>
+  <div class="caption-accounts">Tag: none needed</div>
+</div>
+
+</body>
+</html>
