@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#2D2D2D; --near-black:#1C1C1E; --yellow:#E8C547; --yellow-pale:#FBF5DA;
+    --pink:#E89BB5; --pink-pale:#F9EFF4; --off-white:#FFFDF9; --white:#FFFFFF;
+    --muted:#6B7A68; --light-muted:#9DADA6;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  .slide{
+    width:1080px;height:1080px;padding:96px;
+    display:flex;flex-direction:column;justify-content:center;
+    font-family:'Lato',sans-serif;position:relative;overflow:hidden;
+  }
+  .bg-charcoal{background:var(--charcoal);color:var(--white);}
+  .bg-offwhite{background:var(--off-white);color:var(--charcoal);}
+  .bg-yellow{background:var(--yellow);color:var(--charcoal);}
+  .bg-pink{background:var(--pink);color:var(--charcoal);}
+  .bg-pinkpale{background:var(--pink-pale);color:var(--charcoal);}
+  .bg-yellowpale{background:var(--yellow-pale);color:var(--charcoal);}
+  .headline{font-family:'Playfair Display',serif;font-weight:700;line-height:1.15;}
+  .hook{font-size:80px;}
+  .h-slide{font-size:60px;line-height:1.2;}
+  .body{font-size:36px;line-height:1.45;font-weight:400;margin-top:32px;}
+  .badge{font-family:'Lato';font-weight:700;font-size:160px;line-height:1;}
+  .creds{font-family:'Dancing Script',cursive;font-size:36px;}
+  .script-word{font-family:'Dancing Script',cursive;font-weight:600;color:var(--pink);}
+  .script-word-y{font-family:'Dancing Script',cursive;font-weight:600;color:var(--yellow);}
+  .highlight-yellow{color:var(--yellow);}
+  .highlight-pink{color:var(--pink);}
+  .swipe-yellow{background:var(--yellow);color:var(--charcoal);padding:4px 18px;border-radius:6px 14px 8px 16px;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+  .swipe-pink{background:var(--pink);color:var(--charcoal);padding:4px 18px;border-radius:6px 14px 8px 16px;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+  .underline-pink{border-bottom:8px solid var(--pink);padding-bottom:2px;}
+  .underline-yellow{border-bottom:8px solid var(--yellow);padding-bottom:2px;}
+  .accent-bar{width:120px;height:10px;background:var(--yellow);margin-bottom:40px;}
+  .counter{position:absolute;top:64px;left:64px;background:var(--pink);color:var(--charcoal);
+    font-family:'Lato';font-weight:700;font-size:32px;padding:10px 28px;border-radius:40px;}
+  .signtag{font-family:'Lato';font-weight:700;font-size:30px;letter-spacing:3px;text-transform:uppercase;
+    color:var(--pink);margin-bottom:20px;}
+  .signtag-dark{color:var(--muted);}
+  .hook-wrap{margin-left:38%;}
+  .callout{background:var(--off-white);color:var(--charcoal);border:5px solid var(--pink);
+    border-radius:28px;padding:32px 40px;font-family:'Dancing Script',cursive;font-size:46px;
+    display:inline-block;margin-top:44px;}
+  .divider-dotted{border:none;border-top:5px dotted var(--pink);margin:40px 0;width:180px;}
+</style>
+</head>
+<body>
+
+  <!-- Slide 1: Hook (charcoal). Left third open for cutout photo. -->
+  <div class="slide bg-charcoal" data-document-role="page" data-label="Hook"
+       data-speaker-notes="Add cutout photo on the open left, a doodle arrow toward the headline, and a small sparkle near the number 5.">
+    <div class="counter">1/7</div>
+    <div class="hook-wrap">
+      <div class="accent-bar"></div>
+      <h1 class="headline hook"><span class="highlight-yellow">5 signs</span> your sensitive kid is overstimulated</h1>
+      <p class="body">not <span class="underline-pink">misbehaving</span>. The behavior looks like defiance. The cause is a nervous system that hit capacity.</p>
+    </div>
+  </div>
+
+  <!-- Slide 2: Sign 1 (off-white) -->
+  <div class="slide bg-offwhite" data-document-role="page" data-label="Sign 1">
+    <div class="counter">2/7</div>
+    <div class="signtag signtag-dark">Sign 1</div>
+    <h2 class="headline h-slide">They get <span class="highlight-pink">louder</span>, not calmer, when you ask them to settle</h2>
+    <hr class="divider-dotted">
+    <p class="body">A flooded nervous system cannot downshift on command. The volume is overflow, not disrespect.</p>
+  </div>
+
+  <!-- Slide 3: Sign 2 (charcoal) -->
+  <div class="slide bg-charcoal" data-document-role="page" data-label="Sign 2">
+    <div class="counter">3/7</div>
+    <div class="signtag">Sign 2</div>
+    <h2 class="headline h-slide">Small things suddenly feel <span class="script-word-y">huge</span></h2>
+    <p class="body">The sock seam. The wrong cup. The tag. When the system is full, tiny inputs land like big ones.</p>
+  </div>
+
+  <!-- Slide 4: Sign 3 (pink pale) -->
+  <div class="slide bg-pinkpale" data-document-role="page" data-label="Sign 3">
+    <div class="counter">4/7</div>
+    <div class="signtag signtag-dark">Sign 3</div>
+    <h2 class="headline h-slide">They push away the people they <span class="underline-pink">want most</span></h2>
+    <p class="body">"Go away" often means "I am overwhelmed and I need you to stay." The rejection is a signal, not the truth.</p>
+  </div>
+
+  <!-- Slide 5: Sign 4 (charcoal) -->
+  <div class="slide bg-charcoal" data-document-role="page" data-label="Sign 4">
+    <div class="counter">5/7</div>
+    <div class="signtag">Sign 4</div>
+    <h2 class="headline h-slide">Their <span class="swipe-yellow">body takes over</span> before their words can</h2>
+    <p class="body">Hitting, dropping, bolting. The thinking brain goes offline first. The body speaks what they cannot.</p>
+  </div>
+
+  <!-- Slide 6: Sign 5 (off-white) with callout -->
+  <div class="slide bg-offwhite" data-document-role="page" data-label="Sign 5">
+    <div class="counter">6/7</div>
+    <div class="signtag signtag-dark">Sign 5</div>
+    <h2 class="headline h-slide">They fall apart <span class="highlight-pink">after</span> holding it together all day</h2>
+    <p class="body">School used every drop of regulation they had. Home is where the held-in finally spills.</p>
+    <div class="callout">you are their safe place</div>
+  </div>
+
+  <!-- Slide 7: CTA (charcoal) with creds -->
+  <div class="slide bg-charcoal" data-document-role="page" data-label="CTA"
+       data-speaker-notes="Add cutout photo and a small heart doodle near the creds line in Canva.">
+    <div class="counter">7/7</div>
+    <div class="accent-bar"></div>
+    <h2 class="headline h-slide"><span class="swipe-pink">Save this</span> for the next hard moment.</h2>
+    <p class="body">Follow <span class="highlight-yellow">@as_the_littles_grow</span> for more.</p>
+    <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+  </div>
+
+</body>
+</html>
