@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#2D2D2D; --near-black:#1C1C1E; --yellow:#E8C547; --yellow-pale:#FBF5DA;
+    --pink:#E89BB5; --pink-pale:#F9EFF4; --off-white:#FFFDF9; --white:#FFFFFF;
+    --muted:#6B7A68; --light-muted:#9DADA6;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  .slide{width:1080px;height:1440px;font-family:'Lato',sans-serif;position:relative;overflow:hidden;}
+  .safe{position:absolute;top:180px;right:120px;bottom:180px;left:50px;display:flex;flex-direction:column;justify-content:center;}
+  .safe.safe-top{justify-content:flex-start;}
+  .bg-charcoal{background:var(--charcoal);color:var(--white);}
+  .bg-offwhite{background:var(--off-white);color:var(--charcoal);}
+  .bg-yellow{background:var(--yellow);color:var(--charcoal);}
+  .bg-pink{background:var(--pink);color:var(--charcoal);}
+  .headline{font-family:'Playfair Display',serif;font-weight:700;line-height:1.15;}
+  .hook{font-size:84px;}
+  .h-slide{font-size:64px;}
+  .body{font-size:36px;line-height:1.4;font-weight:400;margin-top:32px;}
+  .badge{font-family:'Lato';font-weight:700;font-size:104px;line-height:1;}
+  .caption{font-size:26px;color:var(--muted);font-weight:400;}
+  .caption-dark{font-size:26px;color:var(--light-muted);font-weight:400;}
+  .creds{font-family:'Dancing Script',cursive;font-size:34px;}
+  .script-word{font-family:'Dancing Script',cursive;font-weight:600;color:var(--pink);}
+  .highlight-yellow{color:var(--yellow);}
+  .highlight-pink{color:var(--pink);}
+  .swipe-yellow{background:var(--yellow);color:var(--charcoal);padding:4px 18px;border-radius:6px 14px 8px 16px;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+  .swipe-pink{background:var(--pink);color:var(--charcoal);padding:4px 18px;border-radius:6px 14px 8px 16px;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+  .underline-pink{border-bottom:8px solid var(--pink);padding-bottom:2px;}
+  .underline-yellow{border-bottom:8px solid var(--yellow);padding-bottom:2px;}
+  .accent-bar{width:120px;height:10px;background:var(--yellow);margin-bottom:40px;}
+  .accent-bar-pink{width:120px;height:10px;background:var(--pink);margin-bottom:40px;}
+  .counter{position:absolute;top:80px;left:50px;background:var(--pink);color:var(--charcoal);font-family:'Lato';font-weight:700;font-size:32px;padding:10px 28px;border-radius:40px;z-index:2;}
+  .counter-dark{position:absolute;top:80px;left:50px;background:var(--charcoal);color:var(--white);font-family:'Lato';font-weight:700;font-size:32px;padding:10px 28px;border-radius:40px;z-index:2;}
+  .callout{background:var(--off-white);color:var(--charcoal);border:5px solid var(--pink);border-radius:28px;padding:36px 44px;font-family:'Dancing Script',cursive;font-size:48px;display:inline-block;margin-top:48px;}
+  .divider-dotted{border:none;border-top:5px dotted var(--pink);margin:48px 0;}
+  .divider-page{align-items:center;justify-content:center;text-align:center;display:flex;flex-direction:column;}
+  .divider-num{font-family:'Playfair Display',serif;font-weight:700;font-size:240px;color:var(--yellow);line-height:1;}
+  .divider-title{font-family:'Playfair Display',serif;font-weight:700;font-size:48px;color:var(--white);margin-top:24px;max-width:760px;}
+  .caption-page{background:var(--off-white);color:var(--charcoal);padding:120px 90px;display:flex;flex-direction:column;justify-content:flex-start;}
+  .caption-flag{font-family:'Lato';font-weight:700;font-size:28px;letter-spacing:2px;text-transform:uppercase;color:var(--pink);margin-bottom:40px;}
+  .caption-body{font-family:'Lato';font-weight:400;font-size:36px;line-height:1.5;white-space:pre-wrap;}
+  .caption-tags{font-family:'Lato';font-weight:700;font-size:34px;color:var(--muted);margin-top:40px;}
+  .caption-accounts{font-family:'Lato';font-weight:400;font-size:30px;color:var(--muted);margin-top:28px;}
+</style>
+</head>
+<body>
+
+  <div class="slide bg-charcoal divider-page" data-document-role="page" data-label="— Carousel 01 —">
+    <div class="divider-num">01</div>
+    <div class="divider-title">5 Signs You&#x27;re Raising a Highly Sensitive Child</div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C01 · Hook">
+    <div class="counter">1/10</div>
+    <div class="safe safe-top">
+      <div class="accent-bar"></div>
+      <h1 class="headline hook">5 signs you're raising a <span class="script-word">highly</span> sensitive child</h1>
+      <p class="body">The world calls it “too much.” It's not.</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C01 · Transition">
+    <div class="counter">2/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">This is not a phase to wait out</h2>
+      <hr class="divider-dotted">
+      <p class="body">About 1 in 5 kids is wired to feel the world more deeply. Here's how to spot it, so you can stop wondering what's wrong and start seeing what's right.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C01 · Tease 1">
+    <div class="counter">3/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">They <span class="swipe-yellow">notice everything</span></h2>
+      <p class="body">The tag in the shirt. Your mood before you say a word.</p>
+    </div>
+  </div>
+  <div class="slide bg-pink" data-document-role="page" data-label="C01 · Tease 2">
+    <div class="counter-dark">4/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Big feelings, and fast</h2>
+      <p class="body">Joy is huge. Disappointment is huge. There is no small setting.</p>
+      <div class="callout">not too much. just tuned in.</div>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C01 · Tease 3">
+    <div class="counter">5/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">They need to warm up</h2>
+      <p class="body">New places and new people take time before they feel safe.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C01 · Tease 4">
+    <div class="counter">6/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">They fall apart after a <span class="swipe-yellow">good day</span></h2>
+      <p class="body">Holding it together all day costs them a lot.</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C01 · Tease 5">
+    <div class="counter">7/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">They ask deep questions</h2>
+      <p class="body">About fairness. About death. About why people hurt.</p>
+    </div>
+  </div>
+  <div class="slide bg-yellow" data-document-role="page" data-label="C01 · Climax 1">
+    <div class="counter">8/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">None of these are flaws. They are all one thing: a nervous system that feels deeply.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C01 · Climax 2">
+    <div class="counter">9/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">Your child is not too much. They take in more than most people ever notice.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C01 · Action">
+    <div class="counter">10/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Comment <span class="highlight-yellow">SIGNS</span> and I'll send you my free Highly Sensitive Child Starter Guide.</h2>
+      <p class="body">Save this for the next hard day.</p>
+      <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+    </div>
+  </div>
+  <div class="slide caption-page" data-document-role="page" data-label="C01 · Caption (copy/paste)">
+    <div class="caption-flag">Caption — not for posting</div>
+    <div class="caption-body">Five signs you&#x27;re raising a highly sensitive child.
+
+They notice everything. They feel big and fast. They need to warm up. They fall apart after a “good” day. They ask deep questions.
+
+None of it means something is wrong. It means their nervous system feels the world deeply. That is not too much. That is tuned in.
+
+Comment SIGNS and I&#x27;ll send you my free Highly Sensitive Child Starter Guide.</div>
+    <div class="caption-tags">#highlysensitivechild #sensitivekids #gentleparenting</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+  <div class="slide bg-charcoal divider-page" data-document-role="page" data-label="— Carousel 02 —">
+    <div class="divider-num">02</div>
+    <div class="divider-title">The Driver&#x27;s Ed Story That Explains My Whole Childhood</div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C02 · Hook">
+    <div class="counter">1/10</div>
+    <div class="safe safe-top">
+      <div class="accent-bar"></div>
+      <h1 class="headline hook">A driving instructor pulled my mom aside. What he said explained my whole <span class="script-word">childhood</span></h1>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C02 · Transition">
+    <div class="counter">2/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Sensitivity is not a weak spot</h2>
+      <hr class="divider-dotted">
+      <p class="body">If you have a child who feels everything, this one is for you. It changed how I see sensitivity for good.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C02 · Tease 1">
+    <div class="counter">3/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Growing up, I felt like the odd one</h2>
+      <p class="body">I cried easily. I noticed things no one else did.</p>
+    </div>
+  </div>
+  <div class="slide bg-pink" data-document-role="page" data-label="C02 · Tease 2">
+    <div class="counter-dark">4/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">People said I was too sensitive</h2>
+      <p class="body">I believed them. I thought something was off with me.</p>
+      <div class="callout">the noticing was never the problem.</div>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C02 · Tease 3">
+    <div class="counter">5/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Then I took driver's ed</h2>
+      <p class="body">I checked every mirror. I saw every car before it moved.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C02 · Tease 4">
+    <div class="counter">6/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">My instructor had taught for <span class="swipe-yellow">15 years</span></h2>
+      <p class="body">One day he walked up to my mom in the parking lot.</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C02 · Tease 5">
+    <div class="counter">7/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">“I've never told a parent this. She's the best driver I've ever had.”</h2>
+    </div>
+  </div>
+  <div class="slide bg-yellow" data-document-role="page" data-label="C02 · Climax 1">
+    <div class="counter">8/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">The thing that made me too sensitive was the same thing that kept me safe. I noticed everything.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C02 · Climax 2">
+    <div class="counter">9/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">Your sensitive kid isn't behind. They see a world most people tune out.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C02 · Action">
+    <div class="counter">10/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Comment <span class="highlight-yellow">DRIVER</span> and I'll send you my free Highly Sensitive Child Starter Guide.</h2>
+      <p class="body">Follow for more.</p>
+      <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+    </div>
+  </div>
+  <div class="slide caption-page" data-document-role="page" data-label="C02 · Caption (copy/paste)">
+    <div class="caption-flag">Caption — not for posting</div>
+    <div class="caption-body">A driving instructor pulled my mom aside after class. He had taught for over 15 years. He said, “I&#x27;ve never told a parent this before. She&#x27;s the best driver I&#x27;ve ever had.”
+
+For years I&#x27;d been called too sensitive. But the same wiring that made me notice every feeling made me notice every car on the road.
+
+Your sensitive kid isn&#x27;t behind. They are awake to a world most people miss.
+
+Comment DRIVER and I&#x27;ll send you my free Highly Sensitive Child Starter Guide.</div>
+    <div class="caption-tags">#highlysensitiveperson #sensitivekids #hsp</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+  <div class="slide bg-charcoal divider-page" data-document-role="page" data-label="— Carousel 03 —">
+    <div class="divider-num">03</div>
+    <div class="divider-title">Calm Kids Don&#x27;t Happen by Accident</div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C03 · Hook">
+    <div class="counter">1/10</div>
+    <div class="safe safe-top">
+      <div class="accent-bar"></div>
+      <h1 class="headline hook">Calm kids don't happen by <span class="script-word">accident</span></h1>
+      <p class="body">Especially the ones who feel everything.</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C03 · Transition">
+    <div class="counter">2/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">You can't talk a sensitive child into calm</h2>
+      <hr class="divider-dotted">
+      <p class="body">But you can build a world that helps them get there. Here's how.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C03 · Tease 1">
+    <div class="counter">3/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Their calm <span class="swipe-yellow">borrows from yours</span> first</h2>
+      <p class="body">A child's nervous system reads the nearest grown-up.</p>
+    </div>
+  </div>
+  <div class="slide bg-pink" data-document-role="page" data-label="C03 · Tease 2">
+    <div class="counter-dark">4/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Less noise, less stuff</h2>
+      <p class="body">A busy room is a loud room to a sensitive kid. Fewer choices help too.</p>
+      <div class="callout">you&#x27;re not spoiling them. you&#x27;re steadying them.</div>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C03 · Tease 3">
+    <div class="counter">5/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">The same rhythm every day</h2>
+      <p class="body">Knowing what comes next lowers the fear of what's coming.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C03 · Tease 4">
+    <div class="counter">6/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">One <span class="swipe-yellow">safe spot</span></h2>
+      <p class="body">A corner, a tent, a beanbag. A place their body learns means “you can rest here.”</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C03 · Tease 5">
+    <div class="counter">7/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Downtime after big days</h2>
+      <p class="body">School, parties, and errands all need a soft landing after.</p>
+    </div>
+  </div>
+  <div class="slide bg-yellow" data-document-role="page" data-label="C03 · Climax 1">
+    <div class="counter">8/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">A calm child is rarely about the child alone. It's about the world we build around them.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C03 · Climax 2">
+    <div class="counter">9/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">Lowering the noise isn't spoiling. You're teaching their body that it is safe.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C03 · Action">
+    <div class="counter">10/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Comment <span class="highlight-yellow">CALM</span> and I'll send you my free Highly Sensitive Child Starter Guide.</h2>
+      <p class="body">Save this one.</p>
+      <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+    </div>
+  </div>
+  <div class="slide caption-page" data-document-role="page" data-label="C03 · Caption (copy/paste)">
+    <div class="caption-flag">Caption — not for posting</div>
+    <div class="caption-body">Calm kids don&#x27;t happen by accident, especially the ones who feel everything.
+
+Their calm borrows from yours first. Then it&#x27;s less noise, the same rhythm each day, one safe spot, and real downtime after big days.
+
+A calm child is rarely about the child alone. It&#x27;s about the world we build around them. Lowering the noise isn&#x27;t spoiling them. It&#x27;s teaching their body it&#x27;s safe.
+
+Comment CALM and I&#x27;ll send you my free Highly Sensitive Child Starter Guide.</div>
+    <div class="caption-tags">#nervoussystem #gentleparenting #sensitivekids</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+  <div class="slide bg-charcoal divider-page" data-document-role="page" data-label="— Carousel 04 —">
+    <div class="divider-num">04</div>
+    <div class="divider-title">Stop Saying “You&#x27;re Okay” to a Sensitive Child</div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C04 · Hook">
+    <div class="counter">1/10</div>
+    <div class="safe safe-top">
+      <div class="accent-bar"></div>
+      <h1 class="headline hook">“You're okay.” It sounds kind. To a sensitive child, it quietly shuts them <span class="script-word">down</span></h1>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C04 · Transition">
+    <div class="counter">2/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Small words carry big messages</h2>
+      <hr class="divider-dotted">
+      <p class="body">The words we reach for by habit can teach kids to hide feelings. Here's what to say instead.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C04 · Tease 1">
+    <div class="counter">3/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">They hear something else</h2>
+      <p class="body">When you say “you're okay,” they hear: what I feel is wrong. So they bottle it.</p>
+    </div>
+  </div>
+  <div class="slide bg-pink" data-document-role="page" data-label="C04 · Tease 2">
+    <div class="counter-dark">4/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Sensitive kids feel first</h2>
+      <p class="body">The feeling has to be seen before it can settle. Thinking comes later.</p>
+      <div class="callout">feel it with them first.</div>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C04 · Tease 3">
+    <div class="counter">5/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Try: “That was a lot. <span class="underline-pink">I'm right here.</span>”</h2>
+      <p class="body">You name it, and you stay.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C04 · Tease 4">
+    <div class="counter">6/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Try: “You're allowed to feel this. <span class="swipe-yellow">I've got you.</span>”</h2>
+      <p class="body">Safety comes before the fix.</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C04 · Tease 5">
+    <div class="counter">7/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">You are not feeding the meltdown</h2>
+      <p class="body">You are helping their body come back down.</p>
+    </div>
+  </div>
+  <div class="slide bg-yellow" data-document-role="page" data-label="C04 · Climax 1">
+    <div class="counter">8/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">Kids don't calm down by being told to. They calm down by being felt with.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C04 · Climax 2">
+    <div class="counter">9/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">The goal isn't a child who stops crying fast. It's one who trusts you with the hard stuff.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C04 · Action">
+    <div class="counter">10/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Comment <span class="highlight-yellow">WORDS</span> and I'll send you my free Highly Sensitive Child Starter Guide.</h2>
+      <p class="body">Share with a parent who needs it.</p>
+      <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+    </div>
+  </div>
+  <div class="slide caption-page" data-document-role="page" data-label="C04 · Caption (copy/paste)">
+    <div class="caption-flag">Caption — not for posting</div>
+    <div class="caption-body">“You&#x27;re okay.” It sounds kind. But to a sensitive child it can quietly say: what you feel is wrong.
+
+Sensitive kids feel first and think later. The feeling has to be seen before it can settle. Try “That was a lot, I&#x27;m right here,” or “You&#x27;re allowed to feel this, I&#x27;ve got you.”
+
+Kids don&#x27;t calm down by being told to. They calm down by being felt with.
+
+Comment WORDS and I&#x27;ll send you my free Highly Sensitive Child Starter Guide.</div>
+    <div class="caption-tags">#gentleparenting #emotionalregulation #sensitivekids</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+  <div class="slide bg-charcoal divider-page" data-document-role="page" data-label="— Carousel 05 —">
+    <div class="divider-num">05</div>
+    <div class="divider-title">They Melt Down at Home Because Home Is Safe</div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C05 · Hook">
+    <div class="counter">1/10</div>
+    <div class="safe safe-top">
+      <div class="accent-bar"></div>
+      <h1 class="headline hook">They hold it together all day, then fall apart the second they see <span class="script-word">you</span></h1>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C05 · Transition">
+    <div class="counter">2/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">This is not them giving you a hard time</h2>
+      <hr class="divider-dotted">
+      <p class="body">It's the biggest sign of trust they can give. Here's why.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C05 · Tease 1">
+    <div class="counter">3/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">All day, they mask</h2>
+      <p class="body">They stay quiet, follow rules, and hold in every big feeling.</p>
+    </div>
+  </div>
+  <div class="slide bg-pink" data-document-role="page" data-label="C05 · Tease 2">
+    <div class="counter-dark">4/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">That takes huge effort</h2>
+      <p class="body">By pickup, the tank is empty and the lid is about to blow.</p>
+      <div class="callout">you&#x27;re their soft place to land.</div>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C05 · Tease 3">
+    <div class="counter">5/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Then they see you</h2>
+      <p class="body">The one person they know will still love them at their worst.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C05 · Tease 4">
+    <div class="counter">6/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">So the feelings come out</h2>
+      <p class="body">Not because you did something wrong. Because you're <span class="swipe-yellow">safe</span>.</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C05 · Tease 5">
+    <div class="counter">7/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">The meltdown is the release</h2>
+      <p class="body">The holding-it-together was the hard part, not this.</p>
+    </div>
+  </div>
+  <div class="slide bg-yellow" data-document-role="page" data-label="C05 · Climax 1">
+    <div class="counter">8/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">They don't fall apart with you because you're the worst part of the day. It's because you're the safest.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C05 · Climax 2">
+    <div class="counter">9/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">You are their soft place to land. That's a gift, even when it doesn't feel like one at 5pm.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C05 · Action">
+    <div class="counter">10/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Comment <span class="highlight-yellow">SAFE</span> and I'll send you my free Highly Sensitive Child Starter Guide.</h2>
+      <p class="body">Save this for pickup.</p>
+      <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+    </div>
+  </div>
+  <div class="slide caption-page" data-document-role="page" data-label="C05 · Caption (copy/paste)">
+    <div class="caption-flag">Caption — not for posting</div>
+    <div class="caption-body">Your sensitive kid holds it together all day, then falls apart the second they see you.
+
+All day they mask. They stay quiet, follow the rules, hold in every big feeling. By pickup the tank is empty. Then they see the one person who will still love them at their worst, and it all comes out.
+
+They don&#x27;t fall apart with you because you&#x27;re the worst part of their day. It&#x27;s because you&#x27;re the safest.
+
+Comment SAFE and I&#x27;ll send you my free Highly Sensitive Child Starter Guide.</div>
+    <div class="caption-tags">#afterschoolrestraintcollapse #sensitivekids #gentleparenting</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+  <div class="slide bg-charcoal divider-page" data-document-role="page" data-label="— Carousel 06 —">
+    <div class="divider-num">06</div>
+    <div class="divider-title">My Parents Never Told Me to Toughen Up</div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C06 · Hook">
+    <div class="counter">1/10</div>
+    <div class="safe safe-top">
+      <div class="accent-bar"></div>
+      <h1 class="headline hook">I was a highly sensitive kid. My parents never told me to <span class="script-word">toughen up</span></h1>
+      <p class="body">It shaped my whole life.</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C06 · Transition">
+    <div class="counter">2/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">You hold more power than you know</h2>
+      <hr class="divider-dotted">
+      <p class="body">If you're raising a child who feels deeply, here's what my parents did, and what it taught me.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C06 · Tease 1">
+    <div class="counter">3/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">When I cried easily</h2>
+      <p class="body">They didn't sigh or look away. They got down low and stayed with me.</p>
+    </div>
+  </div>
+  <div class="slide bg-pink" data-document-role="page" data-label="C06 · Tease 2">
+    <div class="counter-dark">4/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">When something scared me</h2>
+      <p class="body">They didn't rush me. They gave me time to warm up at my own pace.</p>
+      <div class="callout">the way you speak to them becomes their inner voice.</div>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C06 · Tease 3">
+    <div class="counter">5/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">They answered my <span class="swipe-yellow">big questions</span> for real</h2>
+      <p class="body">Gentle voices. Honest answers. Never brushed aside.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C06 · Tease 4">
+    <div class="counter">6/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">They treated my feelings like they mattered</h2>
+      <p class="body">Because they did. I never had to prove them.</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C06 · Tease 5">
+    <div class="counter">7/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">I grew up sensitive still</h2>
+      <p class="body">But I never grew up ashamed of it. That is the whole difference.</p>
+    </div>
+  </div>
+  <div class="slide bg-yellow" data-document-role="page" data-label="C06 · Climax 1">
+    <div class="counter">8/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">You can't make a sensitive child feel less. But you can make sure they never feel wrong for it.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C06 · Climax 2">
+    <div class="counter">9/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">The way you speak to them now becomes the voice in their head later. Make it a kind one.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C06 · Action">
+    <div class="counter">10/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Comment <span class="highlight-yellow">SEEN</span> and I'll send you my free Highly Sensitive Child Starter Guide.</h2>
+      <p class="body">Follow along.</p>
+      <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+    </div>
+  </div>
+  <div class="slide caption-page" data-document-role="page" data-label="C06 · Caption (copy/paste)">
+    <div class="caption-flag">Caption — not for posting</div>
+    <div class="caption-body">I was a highly sensitive kid, and my parents never once told me to toughen up.
+
+When I cried, they got down low and stayed. When I was scared, they let me warm up at my own pace. They answered my big questions for real and treated my feelings like they mattered, because they did.
+
+I grew up sensitive still. But I never grew up ashamed of it. The way you speak to your child now becomes the voice in their head later. Make it a kind one.
+
+Comment SEEN and I&#x27;ll send you my free Highly Sensitive Child Starter Guide.</div>
+    <div class="caption-tags">#highlysensitivechild #gentleparenting #consciousparenting</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+  <div class="slide bg-charcoal divider-page" data-document-role="page" data-label="— Carousel 07 —">
+    <div class="divider-num">07</div>
+    <div class="divider-title">5 Things Highly Sensitive Kids Need That Others Don&#x27;t</div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C07 · Hook">
+    <div class="counter">1/10</div>
+    <div class="safe safe-top">
+      <div class="accent-bar"></div>
+      <h1 class="headline hook">5 things a highly sensitive child needs that other kids can go <span class="script-word">without</span></h1>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C07 · Transition">
+    <div class="counter">2/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">These aren't extras or spoiling</h2>
+      <hr class="divider-dotted">
+      <p class="body">For a kid who feels deeply, they're the basics. Save this list.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C07 · Tease 1">
+    <div class="counter">3/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">A heads-up before change</h2>
+      <p class="body">“In five minutes we're leaving” softens a hard jump.</p>
+    </div>
+  </div>
+  <div class="slide bg-pink" data-document-role="page" data-label="C07 · Tease 2">
+    <div class="counter-dark">4/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Time to warm up</h2>
+      <p class="body">Let them watch from your side before they join in.</p>
+      <div class="callout">not extra. just the basics for a deep feeler.</div>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C07 · Tease 3">
+    <div class="counter">5/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide"><span class="swipe-yellow">Fewer things</span> at once</h2>
+      <p class="body">One activity, calmly, beats five in a rush.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C07 · Tease 4">
+    <div class="counter">6/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Feelings named, not fixed</h2>
+      <p class="body">“You're sad we left” does more than “it's fine.”</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C07 · Tease 5">
+    <div class="counter">7/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Rest that looks like nothing</h2>
+      <p class="body">Quiet time isn't lazy. It's how they refill.</p>
+    </div>
+  </div>
+  <div class="slide bg-yellow" data-document-role="page" data-label="C07 · Climax 1">
+    <div class="counter">8/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">None of this makes them fragile. It makes them steady enough to handle the hard stuff.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C07 · Climax 2">
+    <div class="counter">9/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">Meet these needs early and you skip a hundred meltdowns later. This is prevention, not fuss.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C07 · Action">
+    <div class="counter">10/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Comment <span class="highlight-yellow">NEEDS</span> and I'll send you my free Highly Sensitive Child Starter Guide.</h2>
+      <p class="body">Save it for the week.</p>
+      <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+    </div>
+  </div>
+  <div class="slide caption-page" data-document-role="page" data-label="C07 · Caption (copy/paste)">
+    <div class="caption-flag">Caption — not for posting</div>
+    <div class="caption-body">Five things a highly sensitive child needs that other kids can go without.
+
+A heads-up before change. Time to warm up. Fewer things happening at once. Feelings named instead of fixed. Rest that looks like nothing.
+
+None of this makes them fragile. It makes them steady. Meet these needs early and you skip a hundred meltdowns later. This is prevention, not fuss.
+
+Comment NEEDS and I&#x27;ll send you my free Highly Sensitive Child Starter Guide.</div>
+    <div class="caption-tags">#sensitivekids #gentleparenting #emotionalregulation</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+  <div class="slide bg-charcoal divider-page" data-document-role="page" data-label="— Carousel 08 —">
+    <div class="divider-num">08</div>
+    <div class="divider-title">Why Your Sensitive Child Asks “What If” a Hundred Times</div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C08 · Hook">
+    <div class="counter">1/10</div>
+    <div class="safe safe-top">
+      <div class="accent-bar"></div>
+      <h1 class="headline hook">“What if it storms? What if you <span class="script-word">forget</span> me?” They never stop asking</h1>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C08 · Transition">
+    <div class="counter">2/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">The “what ifs” aren't them being clingy</h2>
+      <hr class="divider-dotted">
+      <p class="body">They're a mind that runs ahead. Here's what's really going on.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C08 · Tease 1">
+    <div class="counter">3/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Sensitive kids process deeply</h2>
+      <p class="body">Their brain plays out every branch of what could happen.</p>
+    </div>
+  </div>
+  <div class="slide bg-pink" data-document-role="page" data-label="C08 · Tease 2">
+    <div class="counter-dark">4/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">One small change feels big</h2>
+      <p class="body">They've already lived it in their head before it happens.</p>
+      <div class="callout">you are the anchor every worry is looking for.</div>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C08 · Tease 3">
+    <div class="counter">5/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Brushing it off makes it <span class="swipe-yellow">grow</span></h2>
+      <p class="body">The worry didn't get answered, so it circles back.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C08 · Tease 4">
+    <div class="counter">6/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Name the worry with them</h2>
+      <p class="body">“You're wondering what happens if plans change.”</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C08 · Tease 5">
+    <div class="counter">7/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Then give one true anchor</h2>
+      <p class="body">“If it changes, we'll figure it out together.” Certainty of you, not the plan.</p>
+    </div>
+  </div>
+  <div class="slide bg-yellow" data-document-role="page" data-label="C08 · Climax 1">
+    <div class="counter">8/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">You can't answer every what if. You can be the steady thing every what if is really seeking.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C08 · Climax 2">
+    <div class="counter">9/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">That deep-thinking brain becomes empathy, planning, and imagination. A strength in training.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C08 · Action">
+    <div class="counter">10/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Comment <span class="highlight-yellow">WHATIF</span> and I'll send you my free Highly Sensitive Child Starter Guide.</h2>
+      <p class="body">Save this.</p>
+      <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+    </div>
+  </div>
+  <div class="slide caption-page" data-document-role="page" data-label="C08 · Caption (copy/paste)">
+    <div class="caption-flag">Caption — not for posting</div>
+    <div class="caption-body">“What if it storms? What if I&#x27;m late? What if you forget me?” Your sensitive kid never seems to stop asking.
+
+The what ifs aren&#x27;t clinginess. They&#x27;re a mind that processes deeply and runs ahead, living every branch before it happens. Brush it off and the worry just circles back.
+
+Name it with them, then give one true anchor: “If it changes, we&#x27;ll figure it out together.” They need certainty of you, not the plan.
+
+Comment WHATIF and I&#x27;ll send you my free Highly Sensitive Child Starter Guide.</div>
+    <div class="caption-tags">#childhoodanxiety #sensitivekids #gentleparenting</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+  <div class="slide bg-charcoal divider-page" data-document-role="page" data-label="— Carousel 09 —">
+    <div class="divider-num">09</div>
+    <div class="divider-title">The Bedtime Meltdown Started Hours Before Bed</div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C09 · Hook">
+    <div class="counter">1/10</div>
+    <div class="safe safe-top">
+      <div class="accent-bar"></div>
+      <h1 class="headline hook">Bedtime falls apart for a <span class="script-word">reason</span></h1>
+      <p class="body">And it started hours before bed.</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C09 · Transition">
+    <div class="counter">2/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">It's almost never about bedtime</h2>
+      <hr class="divider-dotted">
+      <p class="body">Once you see the real cause, nights get easier. Here's the rewind.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C09 · Tease 1">
+    <div class="counter">3/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Think of their day like a <span class="swipe-yellow">cup</span></h2>
+      <p class="body">Every bright light, loud sound, and change adds a drop.</p>
+    </div>
+  </div>
+  <div class="slide bg-pink" data-document-role="page" data-label="C09 · Tease 2">
+    <div class="counter-dark">4/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">School, screens, snacks, siblings</h2>
+      <p class="body">To a sensitive kid, all of it fills the cup a little more.</p>
+      <div class="callout">empty the cup before the night begins.</div>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C09 · Tease 3">
+    <div class="counter">5/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">By bedtime, the cup is full</h2>
+      <p class="body">It only takes one small thing to spill it over.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C09 · Tease 4">
+    <div class="counter">6/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">The wrong pajamas aren't the cause</h2>
+      <p class="body">They're the last drop on a cup that was already full.</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C09 · Tease 5">
+    <div class="counter">7/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">So we <span class="swipe-yellow">empty it sooner</span></h2>
+      <p class="body">Quiet time, dim lights, and less input before the night begins.</p>
+    </div>
+  </div>
+  <div class="slide bg-yellow" data-document-role="page" data-label="C09 · Climax 1">
+    <div class="counter">8/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">You're not fighting bedtime. You're helping a full nervous system let go of a big day.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C09 · Climax 2">
+    <div class="counter">9/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">Look at the whole day, not the last ten minutes. The meltdown makes sense when you rewind it.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C09 · Action">
+    <div class="counter">10/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Comment <span class="highlight-yellow">BEDTIME</span> and I'll send you my free Highly Sensitive Child Starter Guide.</h2>
+      <p class="body">Save for tonight.</p>
+      <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+    </div>
+  </div>
+  <div class="slide caption-page" data-document-role="page" data-label="C09 · Caption (copy/paste)">
+    <div class="caption-flag">Caption — not for posting</div>
+    <div class="caption-body">The bedtime meltdown started hours before bed.
+
+Think of your sensitive kid&#x27;s day like a cup. Every bright light, loud sound, snack, screen, and change adds a drop. By bedtime the cup is full, and one small thing spills it over. The wrong pajamas aren&#x27;t the cause. They&#x27;re the last drop.
+
+So we empty the cup sooner with quiet time and dim lights. Look at the whole day, not the last ten minutes.
+
+Comment BEDTIME and I&#x27;ll send you my free Highly Sensitive Child Starter Guide.</div>
+    <div class="caption-tags">#bedtimestruggles #sensitivekids #nervoussystem</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+  <div class="slide bg-charcoal divider-page" data-document-role="page" data-label="— Carousel 10 —">
+    <div class="divider-num">10</div>
+    <div class="divider-title">What I Wish Someone Told Me the Day I Knew</div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C10 · Hook">
+    <div class="counter">1/10</div>
+    <div class="safe safe-top">
+      <div class="accent-bar"></div>
+      <h1 class="headline hook">The day I realized my child feels <span class="script-word">everything</span>, I panicked</h1>
+      <p class="body">Here's what I wish someone had told me.</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C10 · Transition">
+    <div class="counter">2/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">If you just found out, breathe</h2>
+      <hr class="divider-dotted">
+      <p class="body">Your child is highly sensitive. This is the map I didn't have.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C10 · Tease 1">
+    <div class="counter">3/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Feeling deeply is not a phase</h2>
+      <p class="body">It's how they're wired, and that is okay.</p>
+    </div>
+  </div>
+  <div class="slide bg-pink" data-document-role="page" data-label="C10 · Tease 2">
+    <div class="counter-dark">4/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">They're in <span class="swipe-yellow">good company</span></h2>
+      <p class="body">Around 1 in 5 kids has this trait. Your child is not rare in a lonely way.</p>
+      <div class="callout">depth is a gift, even on the hard days.</div>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C10 · Tease 3">
+    <div class="counter">5/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Their tears aren't a problem</h2>
+      <p class="body">They're information about what matters to them.</p>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C10 · Tease 4">
+    <div class="counter">6/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">The child who cries hard</h2>
+      <p class="body">also loves hard, notices beauty, and cares about being fair.</p>
+    </div>
+  </div>
+  <div class="slide bg-offwhite" data-document-role="page" data-label="C10 · Tease 5">
+    <div class="counter">7/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Your calm is their <span class="swipe-yellow">anchor</span></h2>
+      <p class="body">You don't need perfect words. You just have to stay.</p>
+    </div>
+  </div>
+  <div class="slide bg-yellow" data-document-role="page" data-label="C10 · Climax 1">
+    <div class="counter">8/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">You're not raising a child who's too sensitive. You're raising one who feels the world fully awake.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C10 · Climax 2">
+    <div class="counter">9/10</div>
+    <div class="safe">
+      <h2 class="headline hook" style="font-size:74px;">The trait you fear today is the one people will love them for later. Depth is a gift.</h2>
+    </div>
+  </div>
+  <div class="slide bg-charcoal" data-document-role="page" data-label="C10 · Action">
+    <div class="counter">10/10</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Comment <span class="highlight-yellow">FEELS</span> and I'll send you my free Highly Sensitive Child Starter Guide.</h2>
+      <p class="body">Follow for more.</p>
+      <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+    </div>
+  </div>
+  <div class="slide caption-page" data-document-role="page" data-label="C10 · Caption (copy/paste)">
+    <div class="caption-flag">Caption — not for posting</div>
+    <div class="caption-body">What I wish someone had told me the day I realized my child feels everything.
+
+Feeling deeply isn&#x27;t a phase they grow out of. Around 1 in 5 kids has this trait, so your child is in good company. Their tears aren&#x27;t a problem to solve, they&#x27;re information about what matters. The same child who cries hard also loves hard and notices beauty.
+
+Your calm is their anchor. You don&#x27;t need perfect words. You just have to stay. The trait you fear today is the one people will love them for later.
+
+Comment FEELS and I&#x27;ll send you my free Highly Sensitive Child Starter Guide.</div>
+    <div class="caption-tags">#highlysensitivechild #deepfeelers #gentleparenting</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+</body>
+</html>
