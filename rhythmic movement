@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#2D2D2D; --near-black:#1C1C1E; --yellow:#E8C547; --yellow-pale:#FBF5DA;
+    --pink:#E89BB5; --pink-pale:#F9EFF4; --off-white:#FFFDF9; --white:#FFFFFF;
+    --muted:#6B7A68; --light-muted:#9DADA6;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  .slide{
+    width:1080px;height:1440px;
+    font-family:'Lato',sans-serif;position:relative;overflow:hidden;
+  }
+  .safe{
+    position:absolute;top:180px;right:120px;bottom:180px;left:50px;
+    display:flex;flex-direction:column;justify-content:center;
+  }
+  .safe.safe-top{justify-content:flex-start;}
+  .bg-charcoal{background:var(--charcoal);color:var(--white);}
+  .bg-offwhite{background:var(--off-white);color:var(--charcoal);}
+  .bg-yellow{background:var(--yellow);color:var(--charcoal);}
+  .bg-pink{background:var(--pink);color:var(--charcoal);}
+  .headline{font-family:'Playfair Display',serif;font-weight:700;line-height:1.15;}
+  .hook{font-size:82px;}
+  .h-slide{font-size:64px;}
+  .body{font-size:36px;line-height:1.4;font-weight:400;margin-top:32px;}
+  .badge{font-family:'Lato';font-weight:700;font-size:104px;line-height:1;}
+  .caption{font-size:26px;color:var(--muted);font-weight:400;}
+  .caption-dark{font-size:26px;color:var(--light-muted);font-weight:400;}
+  .creds{font-family:'Dancing Script',cursive;font-size:34px;}
+  .script-word{font-family:'Dancing Script',cursive;font-weight:600;color:var(--pink);}
+  .highlight-yellow{color:var(--yellow);}
+  .highlight-pink{color:var(--pink);}
+  .swipe-yellow{background:var(--yellow);color:var(--charcoal);padding:4px 18px;border-radius:6px 14px 8px 16px;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+  .swipe-pink{background:var(--pink);color:var(--charcoal);padding:4px 18px;border-radius:6px 14px 8px 16px;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+  .underline-pink{border-bottom:8px solid var(--pink);padding-bottom:2px;}
+  .underline-yellow{border-bottom:8px solid var(--yellow);padding-bottom:2px;}
+  .accent-bar{width:120px;height:10px;background:var(--yellow);margin-bottom:40px;}
+  .accent-bar-pink{width:120px;height:10px;background:var(--pink);margin-bottom:40px;}
+  .counter{position:absolute;top:80px;left:50px;background:var(--pink);color:var(--charcoal);
+    font-family:'Lato';font-weight:700;font-size:32px;padding:10px 28px;border-radius:40px;z-index:2;}
+  .callout{background:var(--off-white);color:var(--charcoal);border:5px solid var(--pink);
+    border-radius:28px;padding:36px 44px;font-family:'Dancing Script',cursive;font-size:48px;
+    display:inline-block;margin-top:48px;}
+  .divider-dotted{border:none;border-top:5px dotted var(--pink);margin:48px 0;}
+  .rhythm-row{display:flex;gap:24px;flex-wrap:wrap;margin-top:40px;}
+  .rhythm-chip{background:var(--yellow);color:var(--charcoal);font-family:'Lato';font-weight:700;
+    font-size:34px;padding:14px 34px;border-radius:14px 26px 16px 28px;}
+  .caption-page{background:var(--off-white);color:var(--charcoal);padding:120px 90px;
+    display:flex;flex-direction:column;justify-content:flex-start;}
+  .caption-flag{font-family:'Lato';font-weight:700;font-size:28px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--pink);margin-bottom:40px;}
+  .caption-body{font-family:'Lato';font-weight:400;font-size:36px;line-height:1.5;white-space:pre-wrap;}
+  .caption-tags{font-family:'Lato';font-weight:700;font-size:34px;color:var(--muted);margin-top:40px;}
+  .caption-accounts{font-family:'Lato';font-weight:400;font-size:30px;color:var(--muted);margin-top:28px;}
+</style>
+</head>
+<body>
+
+  <!-- Slide 1: Hook (charcoal + yellow). Text pinned top; open lower area for cutout photo in Canva. -->
+  <div class="slide bg-charcoal" data-document-role="page" data-label="Hook"
+       data-speaker-notes="Text is top-aligned. Add your cutout photo in the open lower area, a curved doodle arrow toward the hook, and a small sparkle burst in Canva.">
+    <div class="counter">1/7</div>
+    <div class="safe safe-top">
+      <div class="accent-bar"></div>
+      <h1 class="headline hook">Scientists found that rhythmic movement <span class="highlight-yellow">stabilizes</span> the stress response.</h1>
+      <p class="body">Their body can calm down before their brain catches up.</p>
+    </div>
+  </div>
+
+  <!-- Slide 2: Why it matters (off-white, breathing room) -->
+  <div class="slide bg-offwhite" data-document-role="page" data-label="Why it matters">
+    <div class="counter">2/7</div>
+    <div class="safe">
+      <h2 class="headline h-slide">You can't reason a flooded kid calm.</h2>
+      <hr class="divider-dotted">
+      <p class="body">But you can move them there. When big feelings take over, the body listens before the thinking brain comes back online.</p>
+    </div>
+  </div>
+
+  <!-- Slide 3: Finding (charcoal + white), rhythm chips -->
+  <div class="slide bg-charcoal" data-document-role="page" data-label="Rhythm is regulation">
+    <div class="counter">3/7</div>
+    <div class="safe">
+      <h2 class="headline h-slide"><span class="swipe-yellow">Rhythm is regulation.</span></h2>
+      <p class="body">Steady, repeating input tells the nervous system it is safe.</p>
+      <div class="rhythm-row">
+        <span class="rhythm-chip">walking</span>
+        <span class="rhythm-chip">rocking</span>
+        <span class="rhythm-chip">tapping</span>
+        <span class="rhythm-chip">swaying</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 4: Finding (pink accent) with callout -->
+  <div class="slide bg-pink" data-document-role="page" data-label="Faster to baseline">
+    <div class="counter">4/7</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Sensitive kids come back to baseline faster with rhythmic input.</h2>
+      <div class="callout">patterns feel safe</div>
+    </div>
+  </div>
+
+  <!-- Slide 5: The science (off-white) -->
+  <div class="slide bg-offwhite" data-document-role="page" data-label="The science">
+    <div class="counter">5/7</div>
+    <div class="safe">
+      <h2 class="headline h-slide">It works through the <span class="underline-pink">vestibular</span> and <span class="underline-pink">proprioceptive</span> pathways.</h2>
+      <p class="body">The body's movement-and-position senses. The ones that keep us grounded and steady.</p>
+    </div>
+  </div>
+
+  <!-- Slide 6: What to do (charcoal + yellow) -->
+  <div class="slide bg-charcoal" data-document-role="page" data-label="What to do">
+    <div class="counter">6/7</div>
+    <div class="safe">
+      <h2 class="headline h-slide">So the next hard moment, <span class="swipe-yellow">add rhythm first.</span></h2>
+      <p class="body">A slow walk. A gentle rock. A hand tapping their back. Regulate the body, then talk.</p>
+    </div>
+  </div>
+
+  <!-- Slide 7: CTA + credibility (charcoal + yellow), creds line in script -->
+  <div class="slide bg-charcoal" data-document-role="page" data-label="CTA">
+    <div class="counter">7/7</div>
+    <div class="safe">
+      <h2 class="headline h-slide">Save this for the next big feeling.</h2>
+      <p class="body">Follow <span class="highlight-yellow">@as_the_littles_grow</span> for more nervous-system-informed support.</p>
+      <p class="creds" style="margin-top:48px;color:var(--light-muted);">Speech Pathologist + Highly Sensitive Person + Homeschooling Mom of 4</p>
+    </div>
+  </div>
+
+  <!-- Caption page: plain selectable text for copy/paste. NOT for posting. -->
+  <div class="slide caption-page" data-document-role="page" data-label="Caption (copy/paste)">
+    <div class="caption-flag">Caption — not for posting</div>
+    <div class="caption-body">Scientists found that rhythmic movement stabilizes the stress response. Which means their body can calm down before their brain catches up.
+
+When your sensitive kid is flooded, you can't reason them calm. But you can move them there. Walking, rocking, tapping, swaying. Steady, repeating input tells the nervous system it is safe, and sensitive kids come back to baseline faster with it. It works through the vestibular and proprioceptive pathways, the body's movement-and-position senses that keep us grounded.
+
+So the next hard moment, add rhythm first. A slow walk, a gentle rock, a hand tapping their back. Regulate the body, then talk.
+
+Save this for the next big feeling.</div>
+    <div class="caption-tags">#sensitivekids #nervoussystem #gentleparenting</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+</body>
+</html>
