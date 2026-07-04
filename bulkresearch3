@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --charcoal:#2D2D2D; --yellow:#E8C547; --pink:#E89BB5;
+    --off-white:#FFFDF9; --muted:#6B7A68;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  .slide{
+    width:1080px;height:1440px;background:var(--off-white);color:var(--charcoal);
+    font-family:'Poppins',sans-serif;position:relative;overflow:hidden;
+  }
+  .safe{position:absolute;top:230px;right:110px;bottom:230px;left:130px;
+    display:flex;flex-direction:column;justify-content:center;}
+  .safe.safe-top{justify-content:flex-start;}
+
+  .top-rule{position:absolute;top:120px;left:130px;right:110px;
+    display:flex;align-items:center;gap:22px;z-index:2;}
+  .top-rule .brand{font-family:'Playfair Display',serif;font-weight:700;font-size:32px;
+    text-transform:uppercase;letter-spacing:0.5px;color:var(--pink);white-space:nowrap;}
+  .top-rule .line{flex:1;height:3px;background:var(--pink);position:relative;}
+  .top-rule .line::after{content:"";position:absolute;right:-2px;top:-7px;
+    width:16px;height:16px;border-top:3px solid var(--pink);border-right:3px solid var(--pink);
+    transform:rotate(45deg);}
+  .brand-block{position:absolute;left:130px;bottom:120px;z-index:2;
+    font-family:'Playfair Display',serif;font-weight:700;font-size:30px;line-height:1.35;
+    letter-spacing:0.3px;color:var(--pink);}
+  .brand-block .url{color:var(--yellow);}
+  .save-mark{position:absolute;right:120px;bottom:110px;width:46px;height:60px;z-index:2;
+    background:var(--pink);
+    clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%);}
+
+  .eyebrow{font-family:'Poppins';font-weight:700;font-size:34px;letter-spacing:2px;
+    text-transform:uppercase;margin-bottom:28px;color:var(--charcoal);}
+  .hook{font-family:'Poppins';font-weight:800;font-size:100px;line-height:0.92;
+    text-transform:uppercase;letter-spacing:-1px;}
+  .h-slide{font-family:'Poppins';font-weight:800;font-size:76px;line-height:0.98;
+    text-transform:uppercase;letter-spacing:-0.5px;}
+  .body{font-family:'Poppins';font-weight:600;font-size:46px;line-height:1.15;
+    text-transform:uppercase;margin-top:44px;}
+  .signature{font-family:'Poppins';font-weight:700;font-size:32px;line-height:1.2;
+    text-transform:uppercase;letter-spacing:0.5px;margin-top:56px;}
+
+  .divider-num{font-family:'Poppins';font-weight:900;font-size:220px;line-height:1;
+    text-transform:uppercase;}
+  .divider-topic{font-family:'Poppins';font-weight:700;font-size:44px;line-height:1.2;
+    text-transform:uppercase;margin-top:36px;max-width:820px;}
+
+  .caption-page{background:var(--off-white);color:var(--charcoal);padding:120px 110px;
+    display:flex;flex-direction:column;justify-content:flex-start;font-family:'Lato',sans-serif;}
+  .caption-flag{font-weight:700;font-size:28px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--pink);margin-bottom:40px;}
+  .caption-body{font-weight:400;font-size:36px;line-height:1.5;white-space:pre-wrap;}
+  .caption-tags{font-weight:700;font-size:34px;color:var(--muted);margin-top:40px;}
+  .caption-accounts{font-weight:400;font-size:30px;color:var(--muted);margin-top:28px;}
+</style>
+
+</head>
+<body>
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 11 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C11</div>
+      <div class="divider-topic">A scratchy tag can register in the brain as a threat, not just an annoyance.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C11 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">A scratchy tag can register in the brain as a threat, not just an annoyance.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C11 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The touch system can flag ordinary touch as danger.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C11 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">In tactile over-responsivity, the brain over-attends to light touch.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C11 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">So a seam, a tag, or a sock line can trigger a genuine fight-or-flight response.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C11 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">That is why 'just ignore it' cannot work. The alarm already went off.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C11 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The discomfort is not a preference. It is a nervous system response.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C11 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Believe them about the tag.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C11 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Follow for more on the sensory world of a sensitive child.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C11 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">When your child says a tag hurts, their brain may be registering that touch as a threat, not just an annoyance.<br><br>In tactile over-responsivity, the brain over-attends to light touch, treating a seam, a tag, or a sock line as something to defend against. That can trigger a genuine fight-or-flight response in the body. Their nervous system has already sounded an alarm before they can even think it through.<br><br>That is exactly why 'just ignore it' does not work. You cannot ignore an alarm that has already gone off. The discomfort is not a preference to talk them out of, and it is not exaggeration. It is a real nervous system response. Believe them about the tag.</div>
+    <div class="caption-tags">#tactileoverresponsivity #clothingsensitivity #fightorflight</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 12 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C12</div>
+      <div class="divider-topic">Bright light and visual clutter add real load to the brain's processing.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C12 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">Bright light and visual clutter add real load to the brain's processing.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C12 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The eyes feed the same overloaded system.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C12 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Visual over-responsivity means busy, cluttered scenes take extra brain effort to process.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C12 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">So an over-decorated, flickering room can quietly wear a sensitive child down.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C12 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The classroom that looks cheerful to us can feel like visual static to them.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C12 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Less visual noise means more brain capacity for focus and calm.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C12 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Calm spaces are not boring. They are kind.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C12 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Follow for more on sensory-friendly spaces.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C12 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">Bright lights and a cluttered, busy room can wear a sensitive child down before anyone has said a word, and it comes down to brain load.<br><br>Vision feeds the same processing system as the other senses. For a child with visual over-responsivity, a busy, over-decorated, flickering space takes extra brain effort to process. It piles onto everything else their nervous system is already handling. The classroom that looks cheerful and stimulating to us can feel like constant visual static to them.<br><br>Often, less visual noise means more brain capacity left over for focus and staying regulated. A calmer space is not boring or under-stimulating. It is a genuine kindness to a sensitive system. Calm spaces are not boring. They are kind.</div>
+    <div class="caption-tags">#visualoverresponsivity #visualclutter #cognitiveload</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 13 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C13</div>
+      <div class="divider-topic">Coping with sensory input all day is real work for the brain.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C13 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">Coping with sensory input all day is real work for the brain.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C13 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Filtering and managing input burns real energy.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C13 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Screening noise, tolerating textures, and reading a busy room all draw on brain resources.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C13 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">For a sensitive nervous system, that work runs nearly nonstop through the day.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C13 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">So the after-school collapse is a brain that spent all day processing overtime.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C13 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">It is not defiance. It is depletion from invisible effort.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C13 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Tired from the inside out.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C13 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Save this for the hard evenings, then follow for more.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C13 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">Your sensitive child can come home wiped out from a day that looked completely ordinary from the outside, and the reason is real brain work.<br><br>Screening out background noise, tolerating scratchy clothes, reading a busy classroom, holding it together in a loud lunchroom, all of it draws on the brain's limited resources. And because a sensitive nervous system does less automatic filtering, that processing runs nearly nonstop all day long.<br><br>So by pickup, the tank is genuinely empty. The after-school collapse is not defiance or manipulation. It is depletion from hours of invisible effort you could not see happening. They did not have a hard day on paper. They had a hard day inside their brain. Tired from the inside out.</div>
+    <div class="caption-tags">#sensoryfatigue #afterschoolcollapse #depletion</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 14 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C14</div>
+      <div class="divider-topic">A sensitive child's brain picks up subtle cues most people filter out.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C14 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">A sensitive child's brain picks up subtle cues most people filter out.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C14 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The tag, the hum, the flicker, the shift in your face.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C14 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Heightened sensitivity means the brain registers fine details others miss entirely.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C14 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">That awareness is exactly why sensitive kids can seem so perceptive and empathetic.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C14 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">It is also why the small stuff others tune out can pile up on them fast.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C14 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The gift and the challenge run on the same wiring, pointed two directions.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C14 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">They notice everything. That is the point.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C14 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Follow for more on the sensitive child's strengths.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C14 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">Your sensitive child's brain picks up subtle details that most people filter right out. The tag, the hum, the flicker, the tiny shift in your expression.<br><br>Heightened sensitivity means the brain registers fine-grained information others miss, with greater activation in regions tied to awareness and depth of processing. That is exactly why sensitive kids can be so perceptive, so empathetic, so tuned in to how everyone around them is feeling.<br><br>It is also why the small stuff that other people tune out can pile up on them quickly. The gift and the challenge run on the very same wiring, just pointed in two directions. They notice everything, and that is the whole point of who they are.</div>
+    <div class="caption-tags">#perceptiveness #empathy #sensoryprocessingsensitivity</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 15 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C15</div>
+      <div class="divider-topic">Sensory needs come from how a brain is wired, not from a choice.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C15 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">Sensory needs come from how a brain is wired, not from a choice.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C15 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">This is not a phase to wait out.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C15 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Sensitivity is rooted in real, biologically based differences in how the brain processes input.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C15 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">So the goal was never to fix it, but to understand and support the wiring.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C15 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">When we work with a child's brain instead of against it, everything gets easier.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C15 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Accommodation is not giving in. It is meeting a real, brain-based need.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C15 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Understood, not changed.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C15 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Save this, follow for more, and share it with someone who needs it.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C15 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">Sensory needs are not something a child picks up or chooses. They come from how that child's brain is wired to process the world.<br><br>Sensitivity is rooted in real, biologically based differences in neural processing, not in a phase, a habit, or a bid for attention. Which means the goal was never to fix it or wait it out. The goal is to understand it and support it.<br><br>When we work with a child's brain instead of fighting against it, so much gets easier for everyone. Accommodating a sensory need is not spoiling or giving in. It is meeting a real, brain-based need in a real body. That is the whole heart of it. Understood, not changed.</div>
+    <div class="caption-tags">#biologicallybased #sensoryneeds #neuralprocessing</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+</body>
+</html>
