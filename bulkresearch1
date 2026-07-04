@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --charcoal:#2D2D2D; --yellow:#E8C547; --pink:#E89BB5;
+    --off-white:#FFFDF9; --muted:#6B7A68;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  .slide{
+    width:1080px;height:1440px;background:var(--off-white);color:var(--charcoal);
+    font-family:'Poppins',sans-serif;position:relative;overflow:hidden;
+  }
+  .safe{position:absolute;top:230px;right:110px;bottom:230px;left:130px;
+    display:flex;flex-direction:column;justify-content:center;}
+  .safe.safe-top{justify-content:flex-start;}
+
+  .top-rule{position:absolute;top:120px;left:130px;right:110px;
+    display:flex;align-items:center;gap:22px;z-index:2;}
+  .top-rule .brand{font-family:'Playfair Display',serif;font-weight:700;font-size:32px;
+    text-transform:uppercase;letter-spacing:0.5px;color:var(--pink);white-space:nowrap;}
+  .top-rule .line{flex:1;height:3px;background:var(--pink);position:relative;}
+  .top-rule .line::after{content:"";position:absolute;right:-2px;top:-7px;
+    width:16px;height:16px;border-top:3px solid var(--pink);border-right:3px solid var(--pink);
+    transform:rotate(45deg);}
+  .brand-block{position:absolute;left:130px;bottom:120px;z-index:2;
+    font-family:'Playfair Display',serif;font-weight:700;font-size:30px;line-height:1.35;
+    letter-spacing:0.3px;color:var(--pink);}
+  .brand-block .url{color:var(--yellow);}
+  .save-mark{position:absolute;right:120px;bottom:110px;width:46px;height:60px;z-index:2;
+    background:var(--pink);
+    clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%);}
+
+  .eyebrow{font-family:'Poppins';font-weight:700;font-size:34px;letter-spacing:2px;
+    text-transform:uppercase;margin-bottom:28px;color:var(--charcoal);}
+  .hook{font-family:'Poppins';font-weight:800;font-size:100px;line-height:0.92;
+    text-transform:uppercase;letter-spacing:-1px;}
+  .h-slide{font-family:'Poppins';font-weight:800;font-size:76px;line-height:0.98;
+    text-transform:uppercase;letter-spacing:-0.5px;}
+  .body{font-family:'Poppins';font-weight:600;font-size:46px;line-height:1.15;
+    text-transform:uppercase;margin-top:44px;}
+  .signature{font-family:'Poppins';font-weight:700;font-size:32px;line-height:1.2;
+    text-transform:uppercase;letter-spacing:0.5px;margin-top:56px;}
+
+  .divider-num{font-family:'Poppins';font-weight:900;font-size:220px;line-height:1;
+    text-transform:uppercase;}
+  .divider-topic{font-family:'Poppins';font-weight:700;font-size:44px;line-height:1.2;
+    text-transform:uppercase;margin-top:36px;max-width:820px;}
+
+  .caption-page{background:var(--off-white);color:var(--charcoal);padding:120px 110px;
+    display:flex;flex-direction:column;justify-content:flex-start;font-family:'Lato',sans-serif;}
+  .caption-flag{font-weight:700;font-size:28px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--pink);margin-bottom:40px;}
+  .caption-body{font-weight:400;font-size:36px;line-height:1.5;white-space:pre-wrap;}
+  .caption-tags{font-weight:700;font-size:34px;color:var(--muted);margin-top:40px;}
+  .caption-accounts{font-weight:400;font-size:30px;color:var(--muted);margin-top:28px;}
+</style>
+
+</head>
+<body>
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 1 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C1</div>
+      <div class="divider-topic">A sensitive brain can react to everyday sounds the way most brains react to a threat.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C1 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">A sensitive brain can react to everyday sounds the way most brains react to a threat.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C1 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The alarm goes off over ordinary input.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C1 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">In sensory over-responsivity, brain areas tied to threat and emotion can over-activate to normal stimuli.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C1 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">So the hum, the echo, the chatter can register in the brain as something to defend against.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C1 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">That is not a behavior problem. It is a brain responding at full volume to input others filter.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C1 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">What looks like drama is a nervous system reading ordinary sound as an alarm.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C1 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Not too sensitive. Wired to react.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C1 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Save this for the next loud outing, then follow for more.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C1 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">When your child covers their ears in a loud room, their brain may be reacting to that sound the way most brains react to a real threat.<br><br>In sensory over-responsivity, brain areas tied to threat and emotion can over-activate in response to ordinary input, and the brain is slower to get used to, or habituate to, repeated stimulation. So the hum, the echo, the overlapping voices can register as something to defend against rather than tune out.<br><br>That is not an overreaction they are choosing. It is a brain responding at full volume to input other people filter automatically. Understanding that changes the whole moment. Not too sensitive. Wired to react.</div>
+    <div class="caption-tags">#sensoryoverresponsivity #auditorysensitivity #amygdala</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 2 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C2</div>
+      <div class="divider-topic">The brain has a filter for background input, and in some kids it lets more through.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C2 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">The brain has a filter for background input, and in some kids it lets more through.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C2 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">It is called sensory gating.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C2 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Sensory gating is how the brain screens out unimportant input so you can focus.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C2 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">When that filter lets more through, the world arrives louder, brighter, and busier.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C2 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">So a sensitive child is not ignoring the chaos. Their brain is not filtering it out.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C2 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">They are taking in what other brains quietly screen away.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C2 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The filter is set differently, not broken.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C2 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Follow for more on the sensory brain.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C2 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">Your brain runs a constant filtering process most people never notice. Researchers call it sensory gating.<br><br>Sensory gating is how the brain screens out unimportant background input, the hum of the fridge, the tag on your shirt, so you can focus on what matters. In some children, that filter lets more through than usual. When it does, the world simply arrives louder, brighter, and busier than it does for other people.<br><br>So a sensitive child who seems overwhelmed by a busy room is not choosing to notice everything. Their brain is not screening it out the way most brains do. They are taking in what other nervous systems quietly filter away. The filter is set differently, not broken.</div>
+    <div class="caption-tags">#sensorygating #filtering #sensoryoverresponsivity</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 3 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C3</div>
+      <div class="divider-topic">Sensitive kids may show more brain activation when they take in the world.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C3 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">Sensitive kids may show more brain activation when they take in the world.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C3 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The depth is visible on a scan.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C3 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Research on high sensitivity finds greater activation in areas tied to awareness and emotion.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C3 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">So the same moment can register more deeply and vividly in a sensitive brain.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C3 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">That richness is also why a busy room drains them faster than their peers.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C3 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The trait that overwhelms them is the same one that makes them perceptive and kind.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C3 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Deep processing is a strength with a cost.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C3 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Save this, then follow for more on the sensitive child.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C3 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">When a sensitive child seems to feel everything more intensely, brain research suggests they genuinely are processing more deeply.<br><br>Studies of high sensitivity find greater activation in brain regions tied to awareness, empathy, and depth of processing. So the same moment that rolls off another child can register more deeply and vividly in a sensitive one. That depth is where their perceptiveness and empathy come from.<br><br>It is also why a loud, busy room drains them faster than it drains other kids, because their brain is doing more with everything it takes in. The very trait that overwhelms them is the one that makes them so tuned in. Depth of processing is a real strength that comes with a real cost.</div>
+    <div class="caption-tags">#sensoryprocessingsensitivity #brainactivation #depthofprocessing</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 4 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C4</div>
+      <div class="divider-topic">Sensory overload can trip the same brain alarm as real danger.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C4 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">Sensory overload can trip the same brain alarm as real danger.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C4 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The brain cannot always tell the difference.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C4 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">When input piles up, the brain's threat system can fire and launch fight, flight, or freeze.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C4 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">That is why a child might hit out, bolt, or completely shut down in an overwhelming place.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C4 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">It is not a decision. It is an automatic survival response running the show.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C4 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Meeting it with a consequence pours fuel on an already-firing alarm.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C4 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Overload is protection, not defiance.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C4 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Save this for the next overwhelming outing, then follow for more.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C4 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">When a sensitive child falls apart in a crowded, noisy place, their brain may be sounding the same alarm it would sound for real danger.<br><br>When sensory input piles up, the brain's threat system can fire and launch the body into fight, flight, or freeze. That is why a child might lash out, try to run, or shut down completely. The brain, flooded with input, cannot always tell the difference between overwhelming and dangerous. It is not a decision. It is an automatic survival response taking over.<br><br>Which is exactly why meeting that moment with a consequence rarely helps. You cannot discipline a brain out of an alarm state. You can only help it feel safe enough to come back down. Overload is protection, not defiance.</div>
+    <div class="caption-tags">#sensoryoverload #fightflightfreeze #threatresponse</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 5 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C5</div>
+      <div class="divider-topic">The brain gets used to repeated input, unless it does not.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C5 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">The brain gets used to repeated input, unless it does not.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C5 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">That process is called habituation.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C5 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Most brains quiet their response to a steady sound or sensation over time.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C5 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">In some kids, that habituation is reduced, so the input never fades into the background.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C5 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">So the buzzing light or scratchy seam stays just as loud on minute ten as minute one.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C5 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">They are not being stubborn about it. Their brain is not tuning it out.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C5 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">It never fades for them the way it does for you.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C5 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Save this, then follow for more.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C5 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">Here is something the brain normally does so well you never notice it: it gets used to things.<br><br>Most brains quiet their response to a steady, repeating input, a humming light, a clothing seam, over the first minute or so. Researchers call this habituation. But in some children, that habituation is reduced. The input never fades into the background the way it is supposed to. It stays just as loud and just as present on minute ten as it was on minute one.<br><br>So when your child is still bothered by the seam or the buzz long after you have stopped noticing it, they are not being stubborn or dramatic. Their brain genuinely is not tuning it out. It never fades for them the way it does for you.</div>
+    <div class="caption-tags">#habituation #sensoryoverresponsivity #tactile</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+</body>
+</html>
