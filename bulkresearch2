@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --charcoal:#2D2D2D; --yellow:#E8C547; --pink:#E89BB5;
+    --off-white:#FFFDF9; --muted:#6B7A68;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  .slide{
+    width:1080px;height:1440px;background:var(--off-white);color:var(--charcoal);
+    font-family:'Poppins',sans-serif;position:relative;overflow:hidden;
+  }
+  .safe{position:absolute;top:230px;right:110px;bottom:230px;left:130px;
+    display:flex;flex-direction:column;justify-content:center;}
+  .safe.safe-top{justify-content:flex-start;}
+
+  .top-rule{position:absolute;top:120px;left:130px;right:110px;
+    display:flex;align-items:center;gap:22px;z-index:2;}
+  .top-rule .brand{font-family:'Playfair Display',serif;font-weight:700;font-size:32px;
+    text-transform:uppercase;letter-spacing:0.5px;color:var(--pink);white-space:nowrap;}
+  .top-rule .line{flex:1;height:3px;background:var(--pink);position:relative;}
+  .top-rule .line::after{content:"";position:absolute;right:-2px;top:-7px;
+    width:16px;height:16px;border-top:3px solid var(--pink);border-right:3px solid var(--pink);
+    transform:rotate(45deg);}
+  .brand-block{position:absolute;left:130px;bottom:120px;z-index:2;
+    font-family:'Playfair Display',serif;font-weight:700;font-size:30px;line-height:1.35;
+    letter-spacing:0.3px;color:var(--pink);}
+  .brand-block .url{color:var(--yellow);}
+  .save-mark{position:absolute;right:120px;bottom:110px;width:46px;height:60px;z-index:2;
+    background:var(--pink);
+    clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%);}
+
+  .eyebrow{font-family:'Poppins';font-weight:700;font-size:34px;letter-spacing:2px;
+    text-transform:uppercase;margin-bottom:28px;color:var(--charcoal);}
+  .hook{font-family:'Poppins';font-weight:800;font-size:100px;line-height:0.92;
+    text-transform:uppercase;letter-spacing:-1px;}
+  .h-slide{font-family:'Poppins';font-weight:800;font-size:76px;line-height:0.98;
+    text-transform:uppercase;letter-spacing:-0.5px;}
+  .body{font-family:'Poppins';font-weight:600;font-size:46px;line-height:1.15;
+    text-transform:uppercase;margin-top:44px;}
+  .signature{font-family:'Poppins';font-weight:700;font-size:32px;line-height:1.2;
+    text-transform:uppercase;letter-spacing:0.5px;margin-top:56px;}
+
+  .divider-num{font-family:'Poppins';font-weight:900;font-size:220px;line-height:1;
+    text-transform:uppercase;}
+  .divider-topic{font-family:'Poppins';font-weight:700;font-size:44px;line-height:1.2;
+    text-transform:uppercase;margin-top:36px;max-width:820px;}
+
+  .caption-page{background:var(--off-white);color:var(--charcoal);padding:120px 110px;
+    display:flex;flex-direction:column;justify-content:flex-start;font-family:'Lato',sans-serif;}
+  .caption-flag{font-weight:700;font-size:28px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--pink);margin-bottom:40px;}
+  .caption-body{font-weight:400;font-size:36px;line-height:1.5;white-space:pre-wrap;}
+  .caption-tags{font-weight:700;font-size:34px;color:var(--muted);margin-top:40px;}
+  .caption-accounts{font-weight:400;font-size:30px;color:var(--muted);margin-top:28px;}
+</style>
+
+</head>
+<body>
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 6 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C6</div>
+      <div class="divider-topic">There is a part of the brain devoted to sensing what is happening inside the body.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C6 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">There is a part of the brain devoted to sensing what is happening inside the body.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C6 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">It is called the insula, and it powers interoception.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C6 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Interoception is how we feel hunger, thirst, a full bladder, or a racing heart.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C6 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">When those internal signals come in faintly, a child may not notice hunger until they crash.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C6 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">So the meltdown from nowhere at 5pm can be a body that missed its own hunger cue.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C6 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">This is not carelessness. It is a brain sense that reads the body more quietly.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C6 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The body was speaking too softly to hear.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C6 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Save this, then follow for more on the body-brain link.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C6 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">There is a specific part of the brain, the insula, whose job is to sense what is happening inside the body. The process is called interoception.<br><br>Interoception is how we notice hunger, thirst, a full bladder, or a heart beating fast. Brain scans show the insula lighting up during these tasks even in children as young as six. But when those internal signals come through faintly, a child might not register that they are hungry until they are already falling apart.<br><br>So the meltdown that seems to come from nowhere at five in the evening may be a body that quietly missed its own hunger cue for hours. That is not carelessness or bad behavior. It is a brain sense that reads the body more softly than most. The body was simply speaking too quietly to hear.</div>
+    <div class="caption-tags">#interoception #insula #bodysignals</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 7 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C7</div>
+      <div class="divider-topic">Strong smells reach the emotional brain faster than almost any other sense.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C7 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">Strong smells reach the emotional brain faster than almost any other sense.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C7 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Smell has a shortcut to the alarm.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C7 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The sense of smell connects directly to brain regions tied to emotion and memory.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C7 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">So a strong scent can trigger a big reaction before a child can think or explain.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C7 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The cafeteria, the perfume, the cleaning spray, any of it can tip the balance fast.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C7 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">That is not pickiness. It is a sense wired straight into the feeling brain.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C7 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The nose has a direct line to emotion.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C7 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Save this, then follow for more on the sensory world.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C7 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">For a sensitive child, a strong smell can be as overwhelming as a loud noise, and there is a neurological reason it hits so fast.<br><br>Of all the senses, smell has an unusually direct route to the brain's emotion and memory centers. It largely skips the relay station the other senses pass through. So a powerful scent can set off an intense emotional reaction before a child has any chance to think it through or put it into words.<br><br>The cafeteria at lunch, someone's strong perfume, a cleaning spray, any of it can tip the balance almost instantly. That is not pickiness or being difficult on purpose. It is a sense wired straight into the feeling brain. The nose really does have a direct line to emotion.</div>
+    <div class="caption-tags">#smellsensitivity #olfaction #amygdala</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 8 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C8</div>
+      <div class="divider-topic">Deep pressure can help calm the body through the nervous system, not the thinking brain.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C8 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">Deep pressure can help calm the body through the nervous system, not the thinking brain.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C8 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Some calm comes in through the body first.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C8 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Slow, firm input helps engage the calming branch of the nervous system.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C8 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">That branch brings a revved-up body back down out of high alert.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C8 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">So a firm hug or weighted blanket can settle a child when words cannot reach them yet.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C8 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">It works below language, which is why it lands in the middle of a storm.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C8 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The body has its own route to calm.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C8 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Save this for hard moments, then follow for more.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C8 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">When words are not reaching your child in the middle of a meltdown, the body can offer another route to calm.<br><br>Slow, firm input, a snug hug, a weighted blanket, a steady squeeze on the shoulders, helps engage the calming branch of the nervous system, the one that brings a revved-up body back down out of high alert. It works below language, through the body directly, which is exactly why it can land when talking is bouncing right off.<br><br>So when your child is too flooded for words, connecting through the body first is not giving up on communication. It is using a different, often faster, door to calm. Offer it, watch what your child actually welcomes, and let their body lead. The body has its own route to calm.</div>
+    <div class="caption-tags">#deeppressure #parasympathetic #calming</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 9 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C9</div>
+      <div class="divider-topic">Movement input helps some brains organize and focus.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C9 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">Movement input helps some brains organize and focus.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C9 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">For some kids, motion is regulation.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C9 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The systems that sense movement and body position feed directly into attention and arousal.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C9 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">So the child who cannot stop wiggling may be seeking exactly what helps their brain settle.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C9 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Forcing stillness can remove the very input their nervous system is reaching for.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C9 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The fidgeting is not defiance. It is the brain looking for regulation through motion.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C9 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Some kids focus better moving.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C9 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Follow for more on movement and regulation.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C9 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">Sitting still can be genuinely harder for some children than we give them credit for, and it comes down to how the brain uses movement.<br><br>The systems that sense movement and body position feed directly into the brain's networks for attention and arousal. For some nervous systems, movement is organizing. It actually helps the brain settle and focus. So the child who cannot seem to stop wiggling may be seeking the exact input that helps them concentrate and stay regulated.<br><br>When we force stillness, we can accidentally take away the very tool their brain is reaching for. The fidgeting is not defiance or a lack of discipline. For a lot of kids, it is the brain looking for regulation through motion. Some kids genuinely focus better when they are moving.</div>
+    <div class="caption-tags">#movement #vestibular #proprioception</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="-- Carousel 10 --">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="divider-num">C10</div>
+      <div class="divider-topic">A child's 'no' to a food is often the brain reacting to texture, not taste.</div>
+    </div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C10 - Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <p class="eyebrow">NEUROSCIENTISTS FOUND</p>
+      <h1 class="hook">A child's 'no' to a food is often the brain reacting to texture, not taste.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C10 - Point 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">The mouth is a sensory organ, wired to the touch system.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C10 - Point 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Touch sensitivity does not stop at the skin. It shows up inside the mouth too.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C10 - Point 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">So a food can be refused for how it feels, not how it tastes, and the reaction is real.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C10 - Point 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Mushy, slimy, or mixed textures can register in the brain as genuinely unpleasant.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C10 - Point 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">That is not a picky phase to push through. It is sensory information.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C10 - Point 7">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Texture is the whole story.</h2>
+      <p class="signature">Kelsey, MA, CCC-SLP</p>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide" data-document-role="page" data-label="C10 - CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide">Save this, then follow for more on sensory eating.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+
+  <div class="slide caption-page" data-document-role="page" data-label="C10 - Caption (copy/paste)">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body">When your sensitive child refuses a food, their brain is often reacting to texture, not taste.<br><br>Touch sensitivity does not stop at the skin. The mouth is densely wired for touch, so tactile over-responsivity shows up there too. A food can get a hard no because of how it feels rather than how it tastes, and that reaction is genuinely real in the brain. Mushy, slimy, or mixed textures can register as unpleasant, even threatening, in a way that is hard to talk a child out of.<br><br>So that is not always a picky phase to push through. Sometimes it is real sensory information coming from a system doing its job a little too well. When we listen to the texture, the refusal starts to make a lot more sense. Texture is the whole story.</div>
+    <div class="caption-tags">#foodtexture #pickyeating #tactileoverresponsivity</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+</body>
+</html>
