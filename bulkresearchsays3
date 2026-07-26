@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ATLG Carousel v2 - Research Says Unit 1 - Part 1 of 3 (C1-C7)</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#2D2D2D; --yellow:#E8C547; --pink:#E89BB5;
+    --off-white:#FFFDF9; --muted:#6B7A68;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  .slide{
+    width:1080px;height:1440px;background:var(--off-white);color:var(--charcoal);
+    font-family:'Poppins',sans-serif;position:relative;overflow:hidden;
+  }
+  .safe{position:absolute;top:230px;right:110px;bottom:230px;left:130px;
+    display:flex;flex-direction:column;justify-content:center;}
+  .safe.safe-top{justify-content:flex-start;}
+
+  /* ---- The frame: identical on every designed slide ---- */
+  .top-rule{position:absolute;top:120px;left:130px;right:110px;
+    display:flex;align-items:center;gap:22px;z-index:2;}
+  .top-rule .brand{font-family:'Playfair Display',serif;font-weight:700;font-size:32px;
+    text-transform:uppercase;letter-spacing:0.5px;color:var(--pink);white-space:nowrap;}
+  .top-rule .line{flex:1;height:3px;background:var(--pink);position:relative;}
+  .top-rule .line::after{content:"";position:absolute;right:-2px;top:-7px;
+    width:16px;height:16px;border-top:3px solid var(--pink);border-right:3px solid var(--pink);
+    transform:rotate(45deg);}
+  .brand-block{position:absolute;left:130px;bottom:120px;z-index:2;
+    font-family:'Playfair Display',serif;font-weight:700;font-size:30px;line-height:1.35;
+    letter-spacing:0.3px;color:var(--pink);}
+  .brand-block .url{color:var(--yellow);}
+  .save-mark{position:absolute;right:120px;bottom:110px;width:46px;height:60px;z-index:2;
+    background:var(--pink);
+    clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%);}
+
+  /* ---- Slide text: Poppins, uppercase, dark grey, tight line-height ---- */
+  .hook{font-family:'Poppins';font-weight:800;font-size:100px;line-height:0.92;
+    text-transform:uppercase;letter-spacing:-1px;}
+  .h-slide{font-family:'Poppins';font-weight:800;font-size:76px;line-height:0.98;
+    text-transform:uppercase;letter-spacing:-0.5px;}
+  .body{font-family:'Poppins';font-weight:600;font-size:46px;line-height:1.15;
+    text-transform:uppercase;margin-top:44px;}
+  .sig{font-family:'Poppins';font-weight:600;font-size:32px;line-height:1.2;
+    text-transform:uppercase;letter-spacing:3px;margin-top:56px;}
+
+  /* ---- Divider page: section break, delete after splitting ---- */
+  .div-num{font-family:'Poppins';font-weight:900;font-size:220px;line-height:1;
+    letter-spacing:-4px;}
+  .div-topic{font-family:'Poppins';font-weight:800;font-size:44px;line-height:1.1;
+    text-transform:uppercase;letter-spacing:0.5px;margin-top:40px;max-width:760px;}
+
+  /* ---- Caption page: plain, selectable, NOT uppercase, NOT framed ---- */
+  .caption-page{background:var(--off-white);color:var(--charcoal);padding:120px 110px;
+    display:flex;flex-direction:column;justify-content:flex-start;font-family:'Lato',sans-serif;}
+  .caption-flag{font-weight:700;font-size:28px;letter-spacing:2px;text-transform:uppercase;
+    color:var(--pink);margin-bottom:40px;}
+  .caption-body{font-weight:400;font-size:36px;line-height:1.5;}
+  .caption-tags{font-weight:700;font-size:34px;color:var(--muted);margin-top:40px;}
+  .caption-accounts{font-weight:400;font-size:30px;color:var(--muted);margin-top:28px;}
+</style>
+</head>
+<body>
+
+  <div class="slide divider" data-document-role="page" data-label="— Carousel 1 —" data-speaker-notes="Section break. Delete after splitting this carousel out.">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="div-num">01</div>
+      <div class="div-topic">A meltdown usually starts long before the meltdown.</div>
+    </div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C1 · 1 Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <h1 class="hook" style="font-size:100px">RESEARCH SAYS<br>A meltdown usually starts long before the meltdown.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C1 · 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">The moment you see is rarely the moment it began.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C1 · 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:84px">By the time a big release happens, a sensitive child has often been holding it together for hours.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C1 · 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:84px">The morning rush. The loud classroom. The effort of staying regulated all day. It fills quietly.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C1 · 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:100px">Then one small thing becomes the tipping point. The juice cup was never really the reason.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C1 · 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:92px">This is not your child being difficult, and it is not you missing something. It is capacity.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C1 · 7 Close">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Watch the buildup, not just the blowup.</h2>
+      <div class="sig">Kelsey, MA, CCC-SLP</div>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C1 · 8 CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:84px">Save this for the next hard afternoon, then follow for more on the sensitive nervous system.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide caption-page" data-document-role="page" data-label="C1 · Caption (copy/paste)" data-speaker-notes="Not for posting. Copy this caption text when you post.">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body" style="font-size:36px">The juice cup was not the reason.<br><br>By the time a big release happens, a sensitive child has often been holding a lot together for hours. The morning rush, the loud classroom, the effort of staying regulated all day. It builds quietly, and then one small thing becomes the tipping point.<br><br>This is not your child being difficult, and it is not you missing something. It is a nervous system that finally reached capacity.<br><br>When we look at the whole day instead of the final moment, the meltdown starts to make sense.</div>
+    <div class="caption-tags">#meltdowns #sensitivekids #nervoussystem</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+  <div class="slide divider" data-document-role="page" data-label="— Carousel 2 —" data-speaker-notes="Section break. Delete after splitting this carousel out.">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="div-num">02</div>
+      <div class="div-topic">Calming down takes longer for some kids, and that is not a choice.</div>
+    </div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C2 · 1 Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <h1 class="hook" style="font-size:100px">RESEARCH SAYS<br>Calming down takes longer for some kids, and that is not a choice.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C2 · 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Recovery speed is wired, not willed.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C2 · 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:84px">Coming back to calm is a physical process. For some nervous systems it simply takes longer.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C2 · 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:100px">It is not your child drawing it out. Their body is finding its way back down.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C2 · 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Pushing them to hurry through it often stretches it out.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C2 · 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Your steady presence is what actually helps them settle.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C2 · 7 Close">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Slower recovery is not defiance. It is biology.</h2>
+      <div class="sig">Kelsey, MA, CCC-SLP</div>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C2 · 8 CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:100px">Follow for more on what actually helps a sensitive child settle.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide caption-page" data-document-role="page" data-label="C2 · Caption (copy/paste)" data-speaker-notes="Not for posting. Copy this caption text when you post.">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body" style="font-size:36px">If your child takes a long time to settle after being upset, they are not doing it to you.<br><br>Coming back to calm is a physical process. For some nervous systems it simply takes longer. Pushing them to hurry through it often stretches it out.<br><br>What helps is your steady presence while their body finds its way back down.<br><br>Slower recovery is not defiance. It is biology.</div>
+    <div class="caption-tags">#emotionalregulation #coregulation #sensitivekids</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+  <div class="slide divider" data-document-role="page" data-label="— Carousel 3 —" data-speaker-notes="Section break. Delete after splitting this carousel out.">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="div-num">03</div>
+      <div class="div-topic">Your child cannot think clearly in the middle of big feelings.</div>
+    </div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C3 · 1 Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <h1 class="hook" style="font-size:100px">RESEARCH SAYS<br>Your child cannot think clearly in the middle of big feelings.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C3 · 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">The thinking brain goes offline first.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C3 · 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:100px">When the body is flooded, the reasoning part of the brain is hard to reach.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C3 · 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:100px">Words, logic, and consequences do not land the way they would in a calm moment.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C3 · 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">So we calm the body first. Less talking, more steady presence.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C3 · 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:100px">The conversation can come later, when they can actually take it in.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C3 · 7 Close">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Calm first. Teach second.</h2>
+      <div class="sig">Kelsey, MA, CCC-SLP</div>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C3 · 8 CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Save this order for the next big moment, then follow for more.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide caption-page" data-document-role="page" data-label="C3 · Caption (copy/paste)" data-speaker-notes="Not for posting. Copy this caption text when you post.">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body" style="font-size:36px">Trying to reason with a child in the middle of a meltdown rarely works, and there is a reason for that.<br><br>When the body is flooded, the thinking part of the brain is hard to reach. Words, logic, and consequences do not land the way they would in a calm moment.<br><br>So we calm the body first. The conversation can come later, when they can actually take it in.<br><br>Calm first. Teach second.</div>
+    <div class="caption-tags">#meltdowns #coregulation #brainscience</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+  <div class="slide divider" data-document-role="page" data-label="— Carousel 4 —" data-speaker-notes="Section break. Delete after splitting this carousel out.">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="div-num">04</div>
+      <div class="div-topic">Naming a feeling can lower its intensity.</div>
+    </div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C4 · 1 Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <h1 class="hook" style="font-size:100px">RESEARCH SAYS<br>Naming a feeling can lower its intensity.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C4 · 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Words on a feeling turn the volume down.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C4 · 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:100px">When we put words to what is happening, it gives the big feeling a shape.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C4 · 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:100px">The body reads that as safety, and the intensity can start to ease.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C4 · 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:100px">Try naming it for them: &#x27;you were really disappointed.&#x27;</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C4 · 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">You do not have to force them to talk. Just offer the words.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C4 · 7 Close">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">You do not have to solve it. You just have to name it.</h2>
+      <div class="sig">Kelsey, MA, CCC-SLP</div>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C4 · 8 CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Try this next time and follow for more gentle scripts.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide caption-page" data-document-role="page" data-label="C4 · Caption (copy/paste)" data-speaker-notes="Not for posting. Copy this caption text when you post.">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body" style="font-size:36px">Sometimes just naming the feeling helps your child calm down, even before anything gets fixed.<br><br>When we put words to what is happening (&#x27;that was so frustrating&#x27;), it gives the big feeling a shape. The body reads that as safety, and the intensity can start to ease.<br><br>You do not have to solve it. You just have to name it.<br><br>Start there.</div>
+    <div class="caption-tags">#namingfeelings #emotionalregulation #sensitivekids</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+  <div class="slide divider" data-document-role="page" data-label="— Carousel 5 —" data-speaker-notes="Section break. Delete after splitting this carousel out.">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="div-num">05</div>
+      <div class="div-topic">A child borrows calm from a regulated adult before they can make their own.</div>
+    </div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C5 · 1 Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <h1 class="hook" style="font-size:100px">RESEARCH SAYS<br>A child borrows calm from a regulated adult before they can make their own.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C5 · 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Regulation is caught before it is taught.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C5 · 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:92px">Self-regulation is not something kids are simply born knowing.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C5 · 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:100px">It is built through hundreds of moments of settling next to a steady adult.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C5 · 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:92px">Over time, your calm becomes the pattern they can eventually find on their own.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C5 · 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">So staying steady is not spoiling them.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C5 · 7 Close">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:100px">You are teaching their nervous system what calm feels like.</h2>
+      <div class="sig">Kelsey, MA, CCC-SLP</div>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C5 · 8 CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:92px">Save this, then follow for more on co-regulation.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide caption-page" data-document-role="page" data-label="C5 · Caption (copy/paste)" data-speaker-notes="Not for posting. Copy this caption text when you post.">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body" style="font-size:36px">Before a child can calm themselves, they borrow calm from us.<br><br>Self-regulation is not something kids are simply born knowing. It is built through hundreds of moments of settling next to a steady adult. Over time, your calm becomes the pattern they can eventually find on their own.<br><br>So when you stay steady, you are not spoiling them. You are teaching their nervous system what calm feels like.</div>
+    <div class="caption-tags">#coregulation #selfregulation #sensitivekids</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+  <div class="slide divider" data-document-role="page" data-label="— Carousel 6 —" data-speaker-notes="Section break. Delete after splitting this carousel out.">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="div-num">06</div>
+      <div class="div-topic">Suppressing a feeling does not make it smaller.</div>
+    </div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C6 · 1 Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <h1 class="hook" style="font-size:100px">RESEARCH SAYS<br>Suppressing a feeling does not make it smaller.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C6 · 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:100px">Pushed-down feelings do not disappear, they wait.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C6 · 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:100px">When kids are told they are fine before they feel fine, the emotion does not vanish.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C6 · 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">It waits. Usually for later, usually bigger.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C6 · 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:92px">That is often why the hardest moments happen at home, where it feels safe to let go.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C6 · 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Give the feeling permission to move: &#x27;it is okay to be upset.&#x27;</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C6 · 7 Close">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Feelings need to move through, not get locked down.</h2>
+      <div class="sig">Kelsey, MA, CCC-SLP</div>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C6 · 8 CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Follow for more on helping feelings move through.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide caption-page" data-document-role="page" data-label="C6 · Caption (copy/paste)" data-speaker-notes="Not for posting. Copy this caption text when you post.">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body" style="font-size:36px">Telling a child to push a feeling down does not make it go away. It just moves it somewhere else, usually to later, and usually bigger.<br><br>When kids are told they are fine before they feel fine, the emotion does not vanish. It waits. That is often why the hardest moments happen at home, where it finally feels safe to let go.<br><br>Feelings need to move through, not get locked down.</div>
+    <div class="caption-tags">#bigfeelings #restraintcollapse #emotionalsafety</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+  <div class="slide divider" data-document-role="page" data-label="— Carousel 7 —" data-speaker-notes="Section break. Delete after splitting this carousel out.">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <div class="div-num">07</div>
+      <div class="div-topic">Hunger and tiredness shrink a child&#x27;s ability to cope.</div>
+    </div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C7 · 1 Hook">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe safe-top">
+      <h1 class="hook" style="font-size:100px">RESEARCH SAYS<br>Hunger and tiredness shrink a child&#x27;s ability to cope.</h1>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C7 · 2">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">The tank was empty before the trigger arrived.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C7 · 3">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">When a child is hungry or tired, their ability to cope drops fast.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C7 · 4">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">The same request that was fine at 10am can fall apart by 5pm.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C7 · 5">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Not because they changed. Because their reserves ran out.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C7 · 6">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Before the correction, check the tank: snack, rest, quiet.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C7 · 7 Close">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Sometimes the fix is not discipline. It is a snack.</h2>
+      <div class="sig">Kelsey, MA, CCC-SLP</div>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide" data-document-role="page" data-label="C7 · 8 CTA">
+    <div class="top-rule"><span class="brand">As The Littles Grow</span><span class="line"></span></div>
+    <div class="safe">
+      <h2 class="h-slide" style="font-size:110px">Save this for the witching hour, then follow for more.</h2>
+    </div>
+    <div class="brand-block">@as_the_littles_grow<br><span class="url">www.asthelittlesgrow.com</span></div>
+    <div class="save-mark"></div>
+  </div>
+
+  <div class="slide caption-page" data-document-role="page" data-label="C7 · Caption (copy/paste)" data-speaker-notes="Not for posting. Copy this caption text when you post.">
+    <div class="caption-flag">Caption - not for posting</div>
+    <div class="caption-body" style="font-size:36px">Sometimes the problem is not the behavior. It is the empty tank underneath it.<br><br>When a child is hungry or tired, their ability to cope drops fast. The same small request that was fine in the morning can fall apart by late afternoon, not because they changed, but because their reserves ran out.<br><br>Before the correction, check the tank.</div>
+    <div class="caption-tags">#meltdownprevention #selfregulation #sensitivekids</div>
+    <div class="caption-accounts">Tag: none needed</div>
+  </div>
+
+</body>
+</html>
